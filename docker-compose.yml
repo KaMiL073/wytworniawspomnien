@@ -1,0 +1,28 @@
+services:
+  frontend:
+    container_name: front
+    build:
+      context: ./frontend
+      args:
+        NODE_ENV: 'development'
+        # NODE_ENV: 'production'
+        #NODE_ENV: 'production-archive'
+        NEXT_PUBLIC_URL: 'http://localhost/'
+    command: [ 'dev' ]
+    volumes:
+      - ./frontend:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+
+  proxy:
+    container_name: prox
+    build: 
+      context: ./proxy
+      args:
+        PROXY_CONF_FILE: './proxy_dev.conf'
+    ports:
+      - 80:80
+    depends_on:
+      - frontend
+
+volumes:
+  node_modules:
