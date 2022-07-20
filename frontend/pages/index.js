@@ -1,4 +1,6 @@
 import Layout from '../components/layouts/layout';
+import HeroSections from '../components/homepage/heroSections';
+import AboutSection from '../components/homepage/aboutSection';
 
 const TITLE = 'Wytworniawspomnien';
 const DESCRIPTION = 'Opis';
@@ -6,7 +8,8 @@ const DESCRIPTION = 'Opis';
 export default function Home() {
   return (
     <Layout title={TITLE} description={DESCRIPTION} useRecaptcha>
-      <h1>home</h1>
+      <HeroSections />
+      <AboutSection />
     </Layout>
   );
 }

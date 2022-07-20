@@ -1,0 +1,52 @@
+.heroSections { 
+    @apply w-full md:max-h-screen relative;
+    background: #CD8E79;
+    // height: 600px;
+
+    .content {
+        @apply max-w-screen-xl mx-auto pt-8 md:pt-0 items-center;
+
+        .heroImges {
+            @apply relative top-6 md:top-16;
+
+        }
+    }
+    h1 {
+        @apply font-bold text-3xl md:text-5xl text-center;			
+        font-family: 'PT Serif';
+        color: #EDD6CF;
+    }
+    p {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 143.3%;
+        /* or 23px */
+
+        text-align: center;
+
+        color: #E5E2E1;
+    }
+    .groupBtn {
+        @apply mt-8 text-center md:flex;
+
+    }
+    .btn {
+        @apply text-black block rounded-xl md:w-1/2 py-3 px-6 m-8;
+        background: #EDD6CF;
+    }
+
+} 
+
+// @media (max-width: 400px) {
+//     .heroSections {
+//         max-height: 700px;
+//     }
+// }
+
+// @media (max-width: 640px) {
+//     .heroSections {
+//         max-height: 850px;
+//     }
+// }
