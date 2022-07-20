@@ -7,11 +7,11 @@ import Decor from '../elements/decor';
 import styles from './styles/heroSections.module.scss';
 
 export default function heroSections() {
-    return (
+    return (   
         <section className={styles.heroSections}>
             <Decor />
-            <div className={`md:flex ${styles.content}`}>
-                <div className="md:w-1/2 relative top-8 md:top-20">
+            <div className={`md:flex items-center ${styles.content}`}>
+                <div className="md:w-1/2 relative">
                     <h1>Fotografia rodzinna <br /> - Gdańsk i okolice</h1>
                     <HeaderDecor />
                     <p>Choć wytwórnia której jestem właścicielem nie znajduje 
@@ -30,7 +30,7 @@ export default function heroSections() {
                         </Link>
                     </div>
                </div>
-                <div className={`${styles.heroImges} mt-8 md:w-1/2`}>
+               <div className={`md:w-1/2 ${styles.heroImges}`}>
                     <Image
                     src="/static/home-hero.webp"
                     alt="Picture of the author"
@@ -41,4 +41,4 @@ export default function heroSections() {
             </div>
         </section >
     );
-}
+} 
