@@ -1,0 +1,8 @@
+.ctaSection {
+    background-color: #F7E6D9;
+
+    .btn {
+        @apply text-black text-center mx-auto block rounded-xl md:w-1/2 py-3 px-6 m-8 relative;
+        background-color: #E6B28A;
+    }
+}

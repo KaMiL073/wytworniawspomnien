@@ -1,0 +1,49 @@
+.oferta {
+    @apply w-full md:max-h-screen relative py-20;
+    background: #CD8E79;
+    .content {
+        @apply max-w-screen-xl justify-between mx-auto pt-8 md:pt-0;        
+    }
+    h1 {
+        @apply font-bold text-3xl md:text-5xl text-center;			
+        font-family: 'PT Serif';
+        color: #EDD6CF;
+    }
+    p {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 143.3%;
+        /* or 23px */
+
+        text-align: center;
+
+        color: #E5E2E1;
+    }
+}
+.container {
+    @apply max-w-screen-xl mx-auto py-16;
+
+    h2 {
+        @apply font-bold text-2xl md:text-4xl text-center;			
+        font-family: 'PT Serif';
+        color: #CD8E79;
+    }
+    p {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 143.3%;
+        /* or 23px */
+
+        text-align: center;
+        padding: 2rem 0 4rem 0;
+
+    }
+    .btn {
+        @apply text-black text-center mx-auto block rounded-xl md:w-3/4 py-3 px-6   ;
+        background: #EDD6CF;
+    }
+}
