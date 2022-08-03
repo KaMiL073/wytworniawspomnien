@@ -1,0 +1,50 @@
+.item {
+    width: 31%;
+    box-shadow: -1px 0 5px 0 rgb(44 44 44 / 40%);
+    @apply sm:w-11/12 sm:mx-auto bg-white rounded;
+
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.header {
+    @apply py-10 px-6 text-center;
+    background: linear-gradient(0deg, #F5EEE5, #F5EEE5), linear-gradient(0deg, #E5E2E1, #E5E2E1), #CD8E79;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.body {
+    min-height: 40rem;
+    @apply py-10 px-6 text-center;
+    background: rgba(237, 214, 207, 0.1);
+
+    ul {
+
+        li {
+                @apply py-8 text-center;
+                border-top: 1px dashed #EDD6CF;
+                // border-bottom: 1px dashed #EDD6CF;
+        &:last-child {
+                border-bottom: 1px dashed #EDD6CF;
+            
+        }
+    }
+    }
+
+}
+.label {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 143.3%;
+    /* identical to box height, or 46px */
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #CD8E79;
+}  
+.price {
+    @apply relative font-bold pt-2 pb-16;
+    color: #CD8E79;
+}

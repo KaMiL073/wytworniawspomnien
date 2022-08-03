@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import Head from 'next/head';
 import Header from '../navigation/header';
-import Footer from '../navigation/footer';
+// import Footer from '../navigation/footer';
 
 export default function Layout({
   children, title, description, keywords, ogImage,
@@ -29,7 +29,7 @@ export default function Layout({
           {children}
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 

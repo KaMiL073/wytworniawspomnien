@@ -14,6 +14,8 @@ export default function Footer() {
               alt="Wytwórnia Wspomnień"
               layout="fill"
               objectFit="contain"
+              width={48}
+              height={48}
             />
           </a>
         </Link>
@@ -22,28 +24,30 @@ export default function Footer() {
         <div className="flex">
           <div className="w-1/2">
             <Link href="/">
-                <a href="/" className={`flex-none ${styles.icon}`}>
-                  <Image
-                    src="/static/fb.svg"
-                    alt="Wytwórnia Wspomnień"
-                    layout="fill"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
+              <a href="/" className={`flex-none ${styles.icon}`}>
+                <Image
+                  src="/static/fb.svg"
+                  alt="Wytwórnia Wspomnień"
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </a>
+            </Link>
           </div>
           <div className="w-1/2">
-              <Link href="/">
-                <a href="/" className={`flex-none ${styles.icon}`}>
-                  <Image
-                    src="/static/in.svg"
-                    alt="Wytwórnia Wspomnień"
-                    layout="fill"
-                    objectFit="contain"
-                  />
-                </a>
-              </Link>
-            
+            <Link href="/">
+              <a href="/" className={`flex-none ${styles.icon}`}>
+                <Image
+                  src="/static/in.svg"
+                  alt="Wytwórnia Wspomnień"
+                  layout="fill"
+                  objectFit="contain"
+                  width={48}
+                  height={48}
+                />
+              </a>
+            </Link>
+
           </div>
         </div>
       </div>

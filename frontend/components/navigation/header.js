@@ -31,7 +31,7 @@ export default function Header() {
           <div className="flex max-w-screen-xl h-full mx-2 items-center justify-between xl:mx-auto">
             <Link href="/">
               <a href="/" className={`flex-none ${styles.logo}`}>
-                <Image src="/static/logo.svg" alt="DKS" layout="fill" objectFit="contain" />
+                <Image src="//static/logo.svg" alt="DKS" layout="fill" objectFit="contain" />
               </a>
             </Link>
             <div>
