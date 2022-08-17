@@ -25,14 +25,6 @@ export default function Portfolio({ portfolio }) {
         </div>
     </div>
   ));
-  console.log(items);
-
-    // const portfolioUrl = `${portfolio.slug}}`;
-  
-    // const metaDescription = (article.seo_description == null) ? DESCRIPTION : article.seo_description;
-    // const imageSocialMedia = (article.image_social_media == null)
-    //   ? null : process.env.assetsPath + article.image_social_media;
-  
     return (
       <Layout title={TITLE} description={DESCRIPTION}>
       <section className={styles.oferta}>
@@ -40,16 +32,10 @@ export default function Portfolio({ portfolio }) {
         <div className={styles.content}>
           <h1>{portfolio.name}</h1>
           <HeaderDecor />
-          <p>
-            Cieszę się niezmiernie, że trafiliście na moją stronę.
-            Poniżej przedstawiam. Wam moje portfolio,
-            które prezentuje efekty moich poszczególnych prac.
-            Wierze, że po zapoznaniu się z nimi zdecydujecie się na współpracę ze mną.
-          </p>
+          <div dangerouslySetInnerHTML={{ __html: portfolio.description }} />
         </div>
       </section>
       <section className="grid md:grid-cols-4 gap-8 py-16 px-4 xl:px-0">
-      aaa
        {items}
 
       </section>
