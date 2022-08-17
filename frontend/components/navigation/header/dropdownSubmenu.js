@@ -4,7 +4,7 @@ import { useState, useRef } from 'react';
 
 import styles from '../../../styles/Header.module.scss';
 
-export default function DropdownSubmenu({ elements, label }) {
+export default function DropdownSubmenu({ elements, label, link }) {
   const dropdownRef = useRef(null);
   const [isOpened, setIsOpened] = useState(false);
 
@@ -49,7 +49,11 @@ export default function DropdownSubmenu({ elements, label }) {
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
       >
-        {label}
+        <Link href={link}>
+          <a href={link}>
+            {label}
+          </a>
+        </Link>
         <ul
           ref={dropdownRef}
           className={`text-dks-gray ${cssClasses.mobile.general} ${cssClasses.desktop.general} ${stateClasses}`}
@@ -67,6 +71,7 @@ DropdownSubmenu.propTypes = {
     title: PropTypes.string,
   })).isRequired,
   label: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
 };
 
 export function DropdownSubmenuWide({ elements, label, link }) {
@@ -144,7 +149,6 @@ DropdownSubmenuWide.propTypes = {
     items: PropTypes.arrayOf(PropTypes.shape({
       href: PropTypes.string,
       title: PropTypes.string,
-      bolded: PropTypes.bool,
     })).isRequired,
   })).isRequired,
   label: PropTypes.string.isRequired,
