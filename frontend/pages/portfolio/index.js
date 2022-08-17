@@ -9,7 +9,7 @@ import styles from '../../styles/Oferta.module.scss';
 const TITLE = 'Wytworniawspomnien';
 const DESCRIPTION = 'Opis';
 
-export default function Portfolio({portfolios}) {
+export default function Portfolio({ portfolios }) {
   console.log(portfolios);
 
   const items = portfolios.map((portfolio) => (
@@ -44,7 +44,7 @@ export default function Portfolio({portfolios}) {
       </section>
       <section className="grid md:grid-cols-4 gap-8 py-16 px-4 xl:px-0">
 
-       {items}
+        {items}
 
       </section>
     </Layout>

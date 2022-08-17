@@ -20,8 +20,11 @@ export default function Header() {
   };
 
   const OfertaSubmenu = [
-    { href: '/oferta-1', title: 'Oferta 1' },
-    { href: '/oferta-2', title: 'Oferta 2' },
+    { href: '/oferta/sesja-rodzinna', title: 'Sesja rodzinna' },
+    { href: '/oferta/sesja-ciazowa', title: 'Sesja ciążowa' },
+    { href: '/oferta/sesja-narzeczenska ', title: 'Sesja narzeczeńska' },
+    { href: '/oferta/chrzciny', title: 'Chrzciny' },
+
   ];
 
   return (
@@ -37,12 +40,12 @@ export default function Header() {
             <div>
               <ul className={submenuClasses}>
                 <li><Link href="/"><a href="/">Home</a></Link></li>
-                <li><Link href="/"><a href="/">O mnie </a></Link></li>
-                <li><Link href="/"><a href="/">Portfolio</a></Link></li>
+                <li><Link href="/o-mnie"><a href="/o-mnie">O mnie </a></Link></li>
+                <li><Link href="/portfolio"><a href="/portfolio">Portfolio</a></Link></li>
                 <li>
-                  <DropdownSubmenu elements={OfertaSubmenu} label="Oferta" />
+                  <DropdownSubmenu elements={OfertaSubmenu} label="Oferta" link="/oferta" />
                 </li>
-                <li><Link href="/"><a href="/">Blog</a></Link></li>
+                {/* <li><Link href="/"><a href="/">Blog</a></Link></li> */}
                 <li><Link href="/"><a href="/">Kontakt</a></Link></li>
               </ul>
             </div>
