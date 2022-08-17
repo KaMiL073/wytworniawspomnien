@@ -10,9 +10,9 @@ module.exports = () => ({
     loader: 'akamai',
     path: '',
   },
-  // env: {
-  // assetsPath: 'https://www.dks.pl/backend/assets/',
+  env: {
+    assetsPath: 'http://localhost/backend/',
   // RECAPTCHA_SITE: process.env.RECAPTCHA_SITE,
   // NEXT_PUBLIC_GOOGLE_ANALYTICS: 'UA-52740839-1',
-  // },
+  },
 });
