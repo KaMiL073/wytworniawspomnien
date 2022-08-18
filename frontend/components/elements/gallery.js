@@ -11,13 +11,14 @@ import styles from './styles/modalPhoto.module.scss';
 
 export default function Gallery({ activeImage, images, onClose }) {
   const [closeModal, setCloseModal] = useState(false);
-  const [image, setImage] = useState(images.find(img => img.id === activeImage));
+  const [image, setImage] = useState(images.find((img) => img.id === activeImage));
   const index = images.indexOf(image);
-  let nextItem, prevItem = false;
-  if(index < images.length - 1) {
+  let nextItem; let
+    prevItem = false;
+  if (index < images.length - 1) {
     nextItem = images[index + 1];
   }
-  if(index >= 0) {
+  if (index >= 0) {
     prevItem = images[index - 1];
   }
 
@@ -32,7 +33,6 @@ export default function Gallery({ activeImage, images, onClose }) {
       document.body.style.overflow = 'unset';
     };
   });
-  
 
   return (
     <div className={styles.overlay}>
@@ -54,20 +54,26 @@ export default function Gallery({ activeImage, images, onClose }) {
         onKeyPress={() => prevItem && setImage(prevItem)}
         role="button"
         tabIndex={0}
-      ><ArrowBackIosIcon /></div>
+      >
+        <ArrowBackIosIcon />
+      </div>
       <div
         className="text-white text-tiny mt-10 pr-4 cursor-pointer absolute right-0"
         onClick={() => nextItem && setImage(nextItem)}
         onKeyPress={() => nextItem && setImage(nextItem)}
         role="button"
         tabIndex={0}
-      ><ArrowForwardIosIcon /></div>
+      >
+        <ArrowForwardIosIcon />
+      </div>
       <div className="text-white text-tiny mt-10 pr-4 cursor-pointer absolute top-0">
-          <a target="_blank" className={styles.btn} href={`${process.env.assetsPath + image.directus_files_id}`}>
-            <div className="h-12">
-              <LaunchIcon /> Otwórz w wyższej rozdzielczości
-            </div>
-          </a>
+        <a target="_blank" className={styles.btn} href={`${process.env.assetsPath + image.directus_files_id}`} rel="noreferrer">
+          <div className="h-12">
+            <LaunchIcon />
+            {' '}
+            Otwórz w wyższej rozdzielczości
+          </div>
+        </a>
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { useState } from 'react';
-import Link from 'next/link';
 import Layout from '../../components/layouts/layout';
 import HeaderDecor from '../../components/elements/headerDecor';
 import Gallery from '../../components/elements/gallery';
@@ -43,7 +42,8 @@ export default function Portfolio({ portfolio }) {
       <section className="grid md:grid-cols-4 gap-8 py-16 px-4 xl:px-0">
         {items}
       </section>
-      {activeImage && <Gallery activeImage={activeImage} images={images} onClose={() => setActiveImage(null)} />}
+      { activeImage
+        && <Gallery activeImage={activeImage} images={images} onClose={() => setActiveImage(null)} />}
     </Layout>
 
   );
