@@ -13,7 +13,7 @@ export default function Gallery({ activeImage, images, onClose }) {
   const [closeModal, setCloseModal] = useState(false);
   const [image, setImage] = useState(images.find((img) => img.id === activeImage));
   const index = images.indexOf(image);
-  let nextItem; let
+  let nextItem = false;
     prevItem = false;
   if (index < images.length - 1) {
     nextItem = images[index + 1];
