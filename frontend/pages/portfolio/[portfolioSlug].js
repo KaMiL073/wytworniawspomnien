@@ -1,8 +1,10 @@
 import Image from 'next/image';
+import { useState } from 'react';
 import Link from 'next/link';
 import Layout from '../../components/layouts/layout';
 import HeaderDecor from '../../components/elements/headerDecor';
-import getPortfolioBySlugs from '../../lib/models/portfolio';
+import Gallery from '../../components/elements/gallery';
+import getPortfolio, { getPortfolioBySlugs } from '../../lib/models/portfolio';
 
 import styles from '../../styles/Oferta.module.scss';
 
@@ -10,19 +12,22 @@ const TITLE = 'Wytworniawspomnien';
 const DESCRIPTION = 'Opis';
 
 export default function Portfolio({ portfolio }) {
-  console.log(portfolio);
-
+  const [activeImage, setActiveImage] = useState(null);
   const images = portfolio.gallery;
-
   const items = images.map((image) => (
-    <div>
-      <div className="w-full h-64 md:h-56 relative">
-        <Image
-          src={`${process.env.assetsPath + image.directus_files_id}`}
-          layout="fill"
-          objectFit="contain"
-        />
-      </div>
+    <div
+      className="w-64 h-64 md:h-56 md:w-56 relative"
+      key={`photo_${image.id}`}
+      onClick={() => { setActiveImage(image.id); }}
+      onKeyPress={() => { setActiveImage(image.id); }}
+      role="button"
+      tabIndex={0}
+    >
+      <Image
+        src={`${process.env.assetsPath + image.directus_files_id}`}
+        layout="fill"
+        objectFit="contain"
+      />
     </div>
   ));
   return (
@@ -37,15 +42,15 @@ export default function Portfolio({ portfolio }) {
       </section>
       <section className="grid md:grid-cols-4 gap-8 py-16 px-4 xl:px-0">
         {items}
-
       </section>
+      {activeImage && <Gallery activeImage={activeImage} images={images} onClose={() => setActiveImage(null)} />}
     </Layout>
 
   );
 }
 
 export async function getStaticPaths() {
-  const portfolios = await getPortfolioBySlugs();
+  const portfolios = await getPortfolio();
   const paths = portfolios.map((portfolio) => ({
     params: {
       portfolioSlug: portfolio.slug,
@@ -59,9 +64,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params: { portfolioSlug } }) {
-  const portfolios = await getPortfolioBySlugs();
-  const requestedPortfolio = portfolios.find((portfolio) => portfolio.slug === portfolioSlug);
-
+  const requestedPortfolio = await getPortfolioBySlugs({ portfolioSlug });
   if (!requestedPortfolio) {
     return {
       notFound: true,

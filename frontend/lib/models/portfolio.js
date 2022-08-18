@@ -23,9 +23,7 @@ export async function getPortfolioBySlugs({ portfolioSlug }) {
     params: {
       fields: [
         '*',
-        'slug',
         'gallery.*',
-
       ],
       filter: {
         status: {
