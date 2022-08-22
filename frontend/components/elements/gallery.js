@@ -49,7 +49,7 @@ export default function Gallery({ activeImage, images, onClose }) {
         <HighlightOffIcon />
       </div>
       <div
-        className="text-white text-tiny mt-10 pr-4 cursor-pointer absolute left-0"
+        className={`text-white text-tiny mt-10 pl-4 cursor-pointer absolute right-0 left-0 ${prevItem ? 'text-white' : 'text-white opacity-50 cursor-not-allowed'}`}
         onClick={() => prevItem && setImage(prevItem)}
         onKeyPress={() => prevItem && setImage(prevItem)}
         role="button"
@@ -58,7 +58,7 @@ export default function Gallery({ activeImage, images, onClose }) {
         <ArrowBackIosIcon />
       </div>
       <div
-        className="text-white text-tiny mt-10 pr-4 cursor-pointer absolute right-0"
+        className={`text-tiny mt-10 pr-4 cursor-pointer absolute right-0 ${nextItem ? 'text-white' : 'text-white opacity-50 cursor-not-allowed'}`}
         onClick={() => nextItem && setImage(nextItem)}
         onKeyPress={() => nextItem && setImage(nextItem)}
         role="button"
@@ -66,7 +66,7 @@ export default function Gallery({ activeImage, images, onClose }) {
       >
         <ArrowForwardIosIcon />
       </div>
-      <div className="text-white text-tiny mt-10 pr-4 cursor-pointer absolute top-0">
+      <div className="text-white text-tiny mt-10 pr-4 cursor-pointer absolute top-0 right-14">
         <a target="_blank" className={styles.btn} href={`${process.env.assetsPath + image.directus_files_id}`} rel="noreferrer">
           <div className="h-12">
             <LaunchIcon />
