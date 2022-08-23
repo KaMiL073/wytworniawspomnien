@@ -9,13 +9,15 @@
         "start": "next start"
     },
     "dependencies": {
-        "@emotion/react": "^11.7.1",
-        "@emotion/styled": "^11.6.0",
+        "@emotion/react": "^11.10.0",
+        "@emotion/styled": "^11.10.0",
         "@fortawesome/fontawesome-svg-core": "^1.2.36",
         "@fortawesome/free-brands-svg-icons": "^5.15.4",
         "@fortawesome/free-solid-svg-icons": "^5.15.4",
         "@fortawesome/react-fontawesome": "^0.1.16",
+        "@material-ui/utils": "^4.11.3",
         "@mui/icons-material": "^5.2.5",
+        "@mui/material": "^5.10.1",
         "@tailwindcss/aspect-ratio": "^0.2.1",
         "@tailwindcss/forms": "^0.3.2",
         "@tailwindcss/typography": "^0.4.0",
