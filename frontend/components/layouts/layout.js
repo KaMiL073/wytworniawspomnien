@@ -48,5 +48,5 @@ Layout.defaultProps = {
   title: false,
   description: false,
   keywords: [],
-  ogImage: false,
+  ogImage: null,
 };

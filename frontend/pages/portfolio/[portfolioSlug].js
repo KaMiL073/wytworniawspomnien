@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import Layout from '../../components/layouts/layout';
 import HeaderDecor from '../../components/elements/headerDecor';
@@ -43,7 +44,13 @@ export default function Portfolio({ portfolio }) {
         {items}
       </section>
       { activeImage
-        && <Gallery activeImage={activeImage} images={images} onClose={() => setActiveImage(null)} />}
+        && (
+        <Gallery
+          activeImage={activeImage}
+          images={images}
+          onClose={() => setActiveImage(null)}
+        />
+        )}
     </Layout>
 
   );
@@ -77,3 +84,15 @@ export async function getStaticProps({ params: { portfolioSlug } }) {
     revalidate: 60,
   };
 }
+
+// Portfolio.propTypes = {
+//   portfolio: PropTypes.arrayOf(PropTypes.shape({
+//     gallery: PropTypes.arrayOf(PropTypes.string),
+//   })),
+//   name: PropTypes.string.isRequired,
+//   description: PropTypes.string.isRequired,
+//   onClose: PropTypes.func.isRequired,
+// };
+// Portfolio.defaultProps = {
+//   portfolios: null,
+// };

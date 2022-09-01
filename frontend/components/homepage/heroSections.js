@@ -31,7 +31,7 @@ export default function heroSections() {
             <Link href="/">
               <a className={styles.btn} href="/">Umów sie na sesje </a>
             </Link>
-            <Link href="/">
+            <Link href="/portfolio">
               <a className={styles.btn} href="/">Portfolio</a>
             </Link>
           </div>

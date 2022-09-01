@@ -3,23 +3,27 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 
 export default function OffertCarts({ offerts }) {
-  const items = offerts.map(({ name, lead, src }) => (
-    <Link href="/">
-      <a href="/">
-        <div className="my-4 md:my-0">
-          <Image
-            src={src}
-            alt="Picture of the author"
-            width={653}
-            height={368}
-          />
-          <div className="px-16">
-            <h3>{name}</h3>
-            <p>{lead}</p>
+  const items = offerts.map(({
+    name, lead, src, url,
+  }) => (
+    <div key={name}>
+      <Link href={url} >
+        <a href={url}>
+          <div className="my-4 md:my-0">
+            <Image
+              src={src}
+              alt="Picture of the author"
+              width={653}
+              height={368}
+            />
+            <div className="px-16">
+              <h3>{name}</h3>
+              <p>{lead}</p>
+            </div>
           </div>
-        </div>
-      </a>
-    </Link>
+        </a>
+      </Link>
+    </div>
   ));
 
   return (

@@ -16,7 +16,7 @@ const about = [
            sesję ciążową jak i sesję narzeczeńską. 
            Wykonam dla Ciebie także reportaż z chrztu świętego.`,
     src: '/static/aboutSection.webp',
-    linkUrl: '/',
+    linkUrl: '/o-mnie',
   },
 ];
 
