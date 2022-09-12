@@ -26,7 +26,7 @@ export default function aboutSection({
           <h2>{name}</h2>
           <HeaderDecor />
           <p>{lead}</p>
-          <Link href="/">
+          <Link href={linkUrl}>
             <a className={styles.btn} href={linkUrl}>Więcje</a>
           </Link>
         </div>

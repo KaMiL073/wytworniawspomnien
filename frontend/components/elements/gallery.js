@@ -87,3 +87,6 @@ Gallery.propTypes = {
   })),
   onClose: PropTypes.func.isRequired,
 };
+Gallery.defaultProps = {
+  images: [],
+};

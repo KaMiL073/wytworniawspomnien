@@ -1,4 +1,4 @@
 .decorRight {
-    @apply absolute bottom-0 right-0;
-    
+    @apply absolute bottom-0 opacity-25 right-0 sm:hidden md:block;
+    z-index: -1;
 }

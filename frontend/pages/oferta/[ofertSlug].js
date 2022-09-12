@@ -29,7 +29,7 @@ const oferts = [
           Zdjęcia wykonuję na terenie Trójmiasta –
           Gdańsk, Sopot, Gdynia oraz w okolicach.
         `,
-    src: '//static/sesja-rodzinna.png',
+    src: '//static/sesja-rodzinna.webp',
   },
   {
     slug: 'sesja-narzeczenska',
@@ -44,7 +44,7 @@ const oferts = [
     Możemy także poszerzyć ofertę o przygotowania przed uroczystością wraz z reportażem przyjęcia. 
     Zdjęcia wykonuję na terenie Trójmiasta – Gdańsk, Sopot, Gdynia oraz w okolicach.
     `,
-    src: '//static/sesja-rodzinna.png',
+    src: '//static/sesja-narzeczenska.webp',
   },
   {
     slug: 'sesja-ciazowa',
@@ -59,7 +59,7 @@ const oferts = [
       Przed sesją wyślę Wam wszelkie informację jak się do niej przygotować. 
       Zdjęcia wykonuję na terenie Trójmiasta – Gdańsk, Sopot, Gdynia oraz w okolicach.
     `,
-    src: '//static/sesja-rodzinna.png',
+    src: '//static/sesja-ciazowa.webp',
   },
   {
     slug: 'chrzciny',
@@ -75,7 +75,7 @@ const oferts = [
       o przygotowania przed uroczystością wraz z reportażem przyjęcia. 
       Zdjęcia wykonuję na terenie Trójmiasta – Gdańsk, Sopot, Gdynia oraz w okolicach.
     `,
-    src: '//static/sesja-rodzinna.png',
+    src: '//static/chrzciny.webp',
   },
 
 ];

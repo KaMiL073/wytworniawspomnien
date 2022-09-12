@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 import Layout from '../../components/layouts/layout';
 import HeaderDecor from '../../components/elements/headerDecor';
 import getPortfolio from '../../lib/models/portfolio';
@@ -10,8 +11,6 @@ const TITLE = 'Wytworniawspomnien';
 const DESCRIPTION = 'Opis';
 
 export default function Portfolio({ portfolios }) {
-  console.log(portfolios);
-
   const items = portfolios.map((portfolio) => (
     <Link href={`/portfolio/${portfolio.slug}`}>
       <a className={styles.btn} href={`/portfolio/${portfolio.slug}`}>
@@ -59,3 +58,11 @@ export async function getStaticProps() {
     revalidate: 60, // 60,
   };
 }
+
+Portfolio.propTypes = {
+  portfolios: PropTypes.arrayOf(PropTypes.shape({
+    portfolios: PropTypes.arrayOf(PropTypes.shape({
+      slug: PropTypes.string.isRequired,
+    })),
+  })),
+};

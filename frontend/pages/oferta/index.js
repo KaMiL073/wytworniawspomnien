@@ -35,7 +35,7 @@ export default function Oferta() {
         <div className="flex flex-col md:flex-row items-center justify-between mx-4 md:mx-0 my-16">
           <div className="md:w-9/12 relative">
             <Image
-              src="/static/sesja-narzeczenska.png"
+              src="/static/sesja-narzeczenska.webp"
               alt="Picture of the author"
               width={866}
               height={538}
