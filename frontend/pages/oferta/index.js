@@ -9,8 +9,8 @@ import ChristeningPrice from '../../components/elements/christeningPrice';
 
 import styles from '../../styles/Oferta.module.scss';
 
-const TITLE = 'Wytworniawspomnien';
-const DESCRIPTION = 'Opis';
+const TITLE = 'Oferta - Wytwórnia Wspomnień';
+const DESCRIPTION = 'Zapraszam Cię do zapoznania się z moją ofertą na reportaż ślubny, sesję rodzinną, ślubną. Fotografia Trójmiasto, Gdańsk i okolice.';
 
 export default function Oferta() {
   return (

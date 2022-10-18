@@ -4,8 +4,8 @@ import AboutSection from '../components/homepage/aboutSection';
 import OfferSection from '../components/homepage/offerSection';
 import CtaSection from '../components/elements/ctaSection';
 
-const TITLE = 'Wytworniawspomnien';
-const DESCRIPTION = 'Opis';
+const TITLE = 'Wytwórnia Wspomnień - Fotografia ślubna, rodzinna Trójmiasto';
+const DESCRIPTION = 'Cześć! Zapraszam Cię na fotograficzną przygodę! Naturalne sesje i reportaże ślubne. Sesje rodzinne pełne uczuć. Fotografia Trójmiasto, Gdańsk i okolice.';
 
 const about = [
   {
@@ -19,7 +19,6 @@ const about = [
     linkUrl: '/o-mnie',
   },
 ];
-
 export default function Home() {
   return (
     <Layout title={TITLE} description={DESCRIPTION}>

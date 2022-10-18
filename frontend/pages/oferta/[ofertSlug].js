@@ -30,6 +30,8 @@ const oferts = [
           Gdańsk, Sopot, Gdynia oraz w okolicach.
         `,
     src: '//static/sesja-rodzinna.webp',
+    seo_title: `Oferta – Sesja rodzinna - Wytwórnia Wspomnień`,
+    seo_description: `Sesja rodzinna w plenerze jest wspaniałą okazją do uwiecznienia Waszych wspólnych niezapomnianych chwil.  Fotografia Trójmiasto, Gdańsk i okolice.`,
   },
   {
     slug: 'sesja-narzeczenska',
@@ -45,6 +47,8 @@ const oferts = [
     Zdjęcia wykonuję na terenie Trójmiasta – Gdańsk, Sopot, Gdynia oraz w okolicach.
     `,
     src: '//static/sesja-narzeczenska.webp',
+    seo_title: `Oferta – Sesja narzeczeńska - Wytwórnia Wspomnień`,
+    seo_description: `Sesja narzeczeńska w plenerze, to wspaniała okazja na spędzenie wyjątkowych chwil przed obiektywem. Fotografia Trójmiasto, Gdańsk i okolice.`,
   },
   {
     slug: 'sesja-ciazowa',
@@ -60,6 +64,8 @@ const oferts = [
       Zdjęcia wykonuję na terenie Trójmiasta – Gdańsk, Sopot, Gdynia oraz w okolicach.
     `,
     src: '//static/sesja-ciazowa.webp',
+    seo_title: `Oferta – Sesja ciążowa - Wytwórnia Wspomnień`,
+    seo_description: `Sesja brzuszkowa w plenerze, to wyjątkowa okazja na uwiecznienie Waszej ciąży. Fotografia Trójmiasto, Gdańsk i okolice.`, 
   },
   {
     slug: 'chrzciny',
@@ -76,11 +82,16 @@ const oferts = [
       Zdjęcia wykonuję na terenie Trójmiasta – Gdańsk, Sopot, Gdynia oraz w okolicach.
     `,
     src: '//static/chrzciny.webp',
+    seo_title: `Oferta – Chrzciny - Wytwórnia Wspomnień`,
+    seo_description: `Sakrament Chrztu Świętego, to wyjątkowy moment w życiu rodziny. Uwiecznij te wspaniałe chwile na pamiątkę dla Twojego dziecka. Trójmiasto, Gdańsk i okolice.`, 
   },
 
 ];
 
 export default function Offer({ ofert }) {
+  const metaTitle = (ofert.seo_title == null) ? TITLE : ofert.seo_title;
+  const metaDescription = (ofert.seo_description == null) ? DESCRIPTION : ofert.seo_description;
+  
   let loginButton;
   if (ofert.slug === 'chrzciny') {
     loginButton = <ChristeningPrice />;
@@ -88,7 +99,7 @@ export default function Offer({ ofert }) {
     loginButton = <Pricing />;
   }
   return (
-    <Layout title={TITLE} description={DESCRIPTION}>
+    <Layout title={metaTitle} description={metaDescription}>
       <section className={styles.aboutSection}>
         <Decor />
         <div className={`flex ${styles.content}`}>

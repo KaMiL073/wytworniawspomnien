@@ -7,8 +7,8 @@ import getPortfolio from '../../lib/models/portfolio';
 
 import styles from '../../styles/Oferta.module.scss';
 
-const TITLE = 'Wytworniawspomnien';
-const DESCRIPTION = 'Opis';
+const TITLE = 'Portfolio - Wytwórnia Wspomnień';
+const DESCRIPTION = 'Zapoznaj się z efektami moich poszczególnych prac. Jeśli uznasz, że taki styl fotografii Ci odpowiada, zapraszam do kontaktu!';
 
 export default function Portfolio({ portfolios }) {
   const items = portfolios.map((portfolio) => (
