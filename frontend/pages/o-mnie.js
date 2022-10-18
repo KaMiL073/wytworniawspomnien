@@ -5,8 +5,8 @@ import Decor from '../components/elements/decor';
 import HeaderDecor from '../components/elements/headerDecor';
 import styles from '../styles/About.module.scss';
 
-const TITLE = 'Wytworniawspomnien';
-const DESCRIPTION = 'Opis';
+const TITLE = 'O mnie - Wytwórnia Wspomnień';
+const DESCRIPTION = 'Cześć, Tu Tomek! Fotograf z Trójmiasto, Gdańsk i okolice. Pasjonat reportaży ślubnych, plenerowych sesji ślubnych oraz rodzinnych. Zapraszam do współpracy!';
 
 export default function Omnie() {
   return (
