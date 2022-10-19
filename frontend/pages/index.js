@@ -19,6 +19,18 @@ const about = [
     linkUrl: '/o-mnie',
   },
 ];
+const OfferSection2 = [
+  {
+    name: 'Fotografia Ślubna',
+    lead: `Czy marzy Wam się piękny, naturalny reportaż ślubny, który chwila po chwili opowie wspaniałą
+    historię z tego wyjątkowego dnia? Czy zależy Wam na wyjątkowej sesji ślubnej, w której to Wy
+    będziecie jak gwiazdy na dużym ekranie? Jeśli chcecie postawić na gościa, który robi to z sercem
+    i pasją to nie czekajcie. Chętnie wymaluję Wam światłem te niezapomniane chwile!`,
+    src: '/static/aboutSection.webp',
+    linkUrl: '/o-mnie',
+    position:'left',
+  },
+];
 export default function Home() {
   return (
     <Layout title={TITLE} description={DESCRIPTION}>
@@ -29,6 +41,14 @@ export default function Home() {
         src={about[0].src}
         linkUrl={about[0].linkUrl}
       />
+      <AboutSection
+        name={OfferSection2[0].name}
+        lead={OfferSection2[0].lead}
+        src={OfferSection2[0].src}
+        linkUrl={OfferSection2[0].linkUrl}
+        position={OfferSection2[0].position}
+      />
+      
       <OfferSection />
       <CtaSection />
     </Layout>
