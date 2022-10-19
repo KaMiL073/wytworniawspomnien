@@ -7,12 +7,12 @@ import DecorRight from '../elements/decorRight';
 import styles from './styles/aboutSection.module.scss';
 
 export default function aboutSection({
-  name, lead, src, linkUrl,
+  name, lead, src, linkUrl, position
 }) {
   return (
     <section className={styles.aboutSection}>
       <DecorRight />
-      <div className={`flex ${styles.content}`}>
+      <div className={`flex ${(position == 'left') ? "md:flex-row-reverse" : "md:flex-row"} ${styles.content}`}>
         <div className="md:w-9/12">
 
           <Image
