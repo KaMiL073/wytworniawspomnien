@@ -65,12 +65,11 @@ export default function Omnie() {
             </p>
             <h2>Gdzie tworzę fotografie?</h2>
             <p>
-              Sesje plenerowe są moim naturalnym środowiskiem.
-              To właśnie pośród natury staram się uwiecznić w Was co najpiękniejsze.
-              Zachodzące słońce? Pochmurny dzień?
-              W obu przypadkach będzie działa się magia :)
-              Oczywiście reportaże wykonuję tam gdzie jest ich miejsce,
-              tak więc nie martwcie się, chrzciny odbędą się standardowo w kościele :)
+              Sesje w plenerze są moim naturalnym środowiskiem. To właśnie pośród natury staram się uwiecznić
+              w Was co najpiękniejsze. Zachodzące słońce? Pochmurny dzień? W obu przypadkach będzie działa się
+              magia :) Jeśli wykonuje reportaż to oczywiście zmieniamy wystrój na piękny kościół oraz wspaniale
+              udekorowaną salę. W takim świecie czuje się równie doskonale wykorzystując piękno danego
+              otoczenia ;)
             </p>
           </div>
         </div>
@@ -80,10 +79,17 @@ export default function Omnie() {
           <div className="md:w-3/12 mt-16 md:mt-0">
             <h2>Jaki styl fotografii lubię najbardziej?</h2>
             <p>
-              Jestem w tej kwestii otwarty na wszelkie propozycje.
-              Czuję się świetnie w lifestyle, ale nie przeszkadzają mi pozowane kadry.
-              Możemy zrobić z tego wybuchową mieszankę pięknych ujęć.
-              Pamiętajcie, jestem dla Was i to Wy musicie czuć się jak najlepiej.
+              Reportaż w stylu ninja. Pracuje bezszelestnie, nie zakłócając wam tego wspaniałego dnia. Owocem tej
+              pracy są piękne, naturalne fotografie które opisują cały przebieg reportażu. Jeśli chodzi o sesję to
+              jestem otwarty na wasze wszelkie propozycję. Czuje się świetnie w lifestyle, ale nie przeszkadzają mi
+              pozowane kadry. Możemy zrobić z tego wybuchową mieszankę pięknych ujęć. Pamiętajcie, jestem
+              dla Was i to Wy musicie czuć się jak najlepiej.
+            </p>
+            <h2>Z kim najlepiej mi się współpracuje?</h2>
+            <p>
+              Uwielbiam współpracować z ludźmi otwartymi na różne ciekawe pomysły. Cenie sobie bezstresowe
+              podejście przy współpracy, natychmiastowe przejście na ty oraz pozytywne nastawienie :) Dobra
+              kooperacja jest bardzo istotna, dołożę wszelkich starań aby taka ona właśnie była.
             </p>
           </div>
           <div className={`flex ${styles.content}`}>
