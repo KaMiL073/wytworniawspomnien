@@ -20,10 +20,14 @@ export default function Header() {
   };
 
   const OfertaSubmenu = [
-    { href: '/oferta/sesja-rodzinna', title: 'Sesja rodzinna' },
-    { href: '/oferta/sesja-ciazowa', title: 'Sesja ciążowa' },
-    { href: '/oferta/sesja-narzeczenska ', title: 'Sesja narzeczeńska' },
-    { href: '/oferta/chrzciny', title: 'Chrzciny' },
+    { href: '/oferta-fotografii-rodzinnej/sesja-rodzinna', title: 'Sesja rodzinna' },
+    { href: '/oferta-fotografii-rodzinnej/sesja-ciazowa', title: 'Sesja ciążowa' },
+    { href: '/oferta-fotografii-rodzinnej/reportaz-z-chrztu-swietego', title: 'Reportaż z chrztu świętego' },
+  ];
+  const OfertaSubmenu2 = [
+    { href: '/oferta-fotografii-slubnej/reportaz-slubny', title: 'Reportaż ślubny' },
+    { href: '/oferta-fotografii-slubnej/sesja-slubna', title: 'Sesja ślubna' },
+    { href: '/oferta-fotografii-slubnej/sesja-narzeczenska ', title: 'Sesja narzeczeńska' },
 
   ];
 
@@ -43,10 +47,13 @@ export default function Header() {
                 <li><Link href="/o-mnie"><a href="/o-mnie">O mnie </a></Link></li>
                 <li><Link href="/portfolio"><a href="/portfolio">Portfolio</a></Link></li>
                 <li>
-                  <DropdownSubmenu elements={OfertaSubmenu} label="Oferta" link="/oferta" />
+                  <DropdownSubmenu elements={OfertaSubmenu2} label="Oferta fotografii ślubnej" link="/oferta-fotografii-slubnej" />
+                </li>
+                <li>
+                  <DropdownSubmenu elements={OfertaSubmenu} label="Oferta fotografii rodzinnej" link="/oferta-fotografii-rodzinnej" />
                 </li>
                 {/* <li><Link href="/"><a href="/">Blog</a></Link></li> */}
-                <li><Link href="/"><a href="/">Kontakt</a></Link></li>
+                <li><Link href="/kontakt"><a href="/kontakt">Kontakt</a></Link></li>
               </ul>
             </div>
             <button

@@ -1,49 +1,10 @@
 /* eslint-disable react/no-danger */
 import PropTypes from 'prop-types';
-
 import styles from './styles/Pricing.module.scss';
 
-export default function Pricing() {
-  const elements = [
-    {
-      label: 'Mini',
-      price: 450,
-      content: `
-          <ul>
-              <li><strong>Zdjęcia</strong> <br/> 15</li>
-              <li><strong>Odbitki</strong> <br/> 13x19 <br/> jedwabny paier</li>
-              <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-              <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
-          </ul>
-          `,
-    },
-    {
-      label: 'Standard',
-      price: 600,
-      content: `
-          <ul>
-              <li><strong>Zdjęcia</strong> <br/> 25</li>
-              <li><strong>Odbitki</strong> <br/> 13x19 <br/> jedwabny paier</li>
-              <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-              <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
-          </ul>
-          `,
-    },
-    {
-      label: 'Premium',
-      price: 1100,
-      content: `
-      <ul>
-      <li><strong>Zdjęcia</strong> <br/> 40</li>
-      <li><strong>Odbitki</strong> <br/> 13x19 <br/> jedwabny paier</li>
-      <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-      <li><strong>Dodatki</strong> <br/> Teczka na odbitki, presoanlizowany album 20x20, 10 rozkładówek</li>
-  </ul>
-          `,
-    },
-  ].map((element) => (
-    <div className={styles.item}>
-
+export default function Pricing({ elements }) {
+  const items = elements.map((element) => (
+    <div className={`h-[66rem] mx-8 ${styles.item}`}>
       <div className={styles.header}>
         <h5 className={styles.label}>{element.label}</h5>
         <div className={styles.price}>
@@ -61,15 +22,14 @@ export default function Pricing() {
 
   return (
     <>
-      {elements}
+      {items}
     </>
   );
 }
 
 Pricing.propTypes = {
-  oferts: PropTypes.shape({
+  elements: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string,
-    price: PropTypes.number,
-    content: PropTypes.string,
-  }).isRequired,
+    price: PropTypes.string,
+  })).isRequired,
 };

@@ -7,7 +7,7 @@ export default function OffertCarts({ offerts }) {
     name, lead, src, url,
   }) => (
     <div key={name}>
-      <Link href={url} >
+      <Link href={url}>
         <a href={url}>
           <div className="my-4 md:my-0">
             <Image
