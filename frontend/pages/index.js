@@ -28,7 +28,7 @@ const OfferSection2 = [
     i pasją to nie czekajcie. Chętnie wymaluję Wam światłem te niezapomniane chwile!`,
     src: '/static/aboutSection.webp',
     linkUrl: '/o-mnie',
-    position:'left',
+    position: 'left',
   },
 ];
 export default function Home() {
@@ -48,7 +48,7 @@ export default function Home() {
         linkUrl={OfferSection2[0].linkUrl}
         position={OfferSection2[0].position}
       />
-      
+
       <OfferSection />
       <CtaSection />
     </Layout>
