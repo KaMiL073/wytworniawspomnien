@@ -1,6 +1,7 @@
 import Image from 'next/image';
+import EmailIcon from '@mui/icons-material/Email';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import Layout from '../components/layouts/layout';
-
 import Decor from '../components/elements/decor';
 import HeaderDecor from '../components/elements/headerDecor';
 import styles from '../styles/About.module.scss';
@@ -24,8 +25,8 @@ export default function coontact() {
           </div>
           <div className="lg:w-2/4 xl:w-3/12 px-8 2xl:px-0 text-center">
             <h1>Kontakt</h1>
-            <HeaderDecor />
             <p>
+              <HeaderDecor />
               Jeśli podobają się wam moje prace i chcecie porozmawiać,
               zapytać o ofertę lub wolny termin to zapraszam do kontaktu ze mną.
               Proszę opiszcie dokładnie czego oczekujecie ode mnie.
@@ -34,9 +35,13 @@ export default function coontact() {
               wam zapewnić. Proszę abyście pisali do mnie od razu na &quot;ty&quot; :)
             </p>
             <p>
-              Email:
+              <EmailIcon className="w-6 h-6 mr-2 mb-2" />
+              {' '}
+              kontakt@wytworniawspomnien.p
               <br />
-              Telefon:
+              <LocalPhoneIcon className="w-6 h-6 mr-2 mb-2" />
+              {' '}
+              +48 000 - 000 - 000
             </p>
           </div>
         </div>

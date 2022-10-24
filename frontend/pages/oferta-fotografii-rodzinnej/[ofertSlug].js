@@ -61,10 +61,10 @@ const oferts = [
         price: 1200,
         content: `
         <ul>
-        <li><strong>Zdjęcia</strong> <br/> 50</li>
+        <li><strong>Zdjęcia</strong> <br/> <strong>50</strong></li>
         <li><strong>Odbitki</strong> <br/> 13x23 <br/> jedwabny paier</li>
         <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-        <li><strong>Dodatki</strong> <br/> Teczka na odbitki, presoanlizowany album 20x20, 10 rozkładówek</li>
+        <li><strong>Dodatki</strong> <br/> Teczka na odbitki, <strong>presoanlizowany album 20x20, 10 rozkładówek</strong></li>
     </ul>
             `,
       },
@@ -116,10 +116,10 @@ const oferts = [
         price: 1200,
         content: `
         <ul>
-        <li><strong>Zdjęcia</strong> <br/> 50</li>
+        <li><strong>Zdjęcia</strong> <br/> <strong>50</strong></li>
         <li><strong>Odbitki</strong> <br/> 13x23 <br/> jedwabny paier</li>
         <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-        <li><strong>Dodatki</strong> <br/> Teczka na odbitki, presoanlizowany album 20x20, 10 rozkładówek</li>
+        <li><strong>Dodatki</strong> <br/> Teczka na odbitki, <strong>presoanlizowany album 20x20, 10 rozkładówek</strong></li>
     </ul>
             `,
       },
@@ -148,9 +148,12 @@ const oferts = [
         price: 700,
         content: `
             <ul>
-                <li><strong>Zawiera</strong> <br/> Ceremonia, mini sesja rodzinna</li>
+                <li><strong>Zawiera</strong> <br/> 
+                  <strong>&#9900;</strong> Ceremonia, <br/> 
+                  <strong>&#9900;</strong> Mini sesja rodzinna <br/><br /><br />
+                </li>
                 <li><strong>Zdjęcia</strong> <br/> 30 </li>
-                <li><strong>Odbitki</strong> <br/>50 szt - 13x23 <br/> Jedwabny papier </li>
+                <li><strong>Odbitki</strong> <br/>50 szt - 15x23 <br/> Jedwabny papier </li>
                 <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
                 <li><strong>Dodatki</strong> <br/> Teczka na odbitki </li>         
             </ul>
@@ -161,14 +164,18 @@ const oferts = [
         price: 1200,
         content: `
           <ul>
-            <li><strong>Zawiera</strong> <br/> Przygotowania, ceremonia, mini sesja rodzinna, przyjęcie</li>
-            <li><strong>Zdjęcia</strong> <br/> 50 </li>
-            <li><strong>Odbitki</strong> <br/> 13x23 <br/> Jedwabny papier </li>
+            <li><strong>Zawiera</strong> <br/> 
+              <strong>&#9900;</strong> Przygotowania, <br />
+              <strong>&#9900;</strong> Ceremonia, <br />
+              <strong>&#9900;</strong> Mini sesja rodzinna, <br /> 
+              <strong>&#9900;</strong> Przyjęcie <br />
+            </li>
+            <li><strong>Zdjęcia</strong> <br/> <strong>50 </strong></li>
+            <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier </li>
             <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
-            <li><strong>Dodatki</strong> <br/> Teczka na odbitki, Personalizowany album 20x20, 10 rozkładówek</li>         
+            <li><strong>Dodatki</strong> <br/> Teczka na odbitki, <strong>Personalizowany album 20x20, 10 rozkładówek</strong></li>         
           </ul>
             `,
-        pricing: '',
       },
     ],
   },
@@ -202,7 +209,7 @@ export default function Offer({ ofert }) {
           </div>
         </div>
       </section>
-      <section className="flex w-full sm:flex-col sm:space-y-4 my-24 mx-auto md:items-end justify-between max-w-screen-xl">
+      <section className="flex w-full sm:flex-col sm:space-y-4 my-24 mx-auto md:items-end justify-center max-w-screen-xl">
         <Pricing elements={pricing} />
       </section>
     </Layout>

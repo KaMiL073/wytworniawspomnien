@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import PropTypes from 'prop-types';
 import Layout from '../../components/layouts/layout';
-
 import Decor from '../../components/elements/decor';
 import HeaderDecor from '../../components/elements/headerDecor';
 import styles from '../../styles/About.module.scss';
@@ -33,9 +32,14 @@ const oferts = [
         price: 3000,
         content: `
             <ul>
-                <li><strong>Zawiera</strong> <br/> Przygotowania, ceremonia, wesele, mini sesja ślubna w dniu ślubu w okolicy Sali weselnej</li>
+                <li><strong>Zawiera</strong> <br/> 
+                    <strong>&#9900;</strong> Przygotowania, <br/>
+                    <strong>&#9900;</strong> Ceremonia, <br/>
+                    <strong>&#9900;</strong> wesele, <br/>
+                    <strong>&#9900;</strong> Mini sesja ślubna w dniu ślubu w okolicy Sali weselnej, <br/><br/>
+                 </li>
                 <li><strong>Zdjęcia</strong> <br/> 400 </li>
-                <li><strong>Odbitki</strong> <br/>50 szt - 13x19 <br/> Jedwabny papier </li>
+                <li><strong>Odbitki</strong> <br/>50 szt - 15x23 <br/> Jedwabny papier </li>
                 <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
                 <li><strong>Dodatki</strong> <br/> Pendrive z pudełkiem na odbitki </li>         
             </ul>
@@ -46,11 +50,17 @@ const oferts = [
         price: 4000,
         content: `
           <ul>
-            <li><strong>Zawiera</strong> <br/> Przygotowania, ceremonia, wesele, mini sesja w dniu ślubu w okolicy Sali weselnej, pełna sesja ślubna w odrębnym dniu</li>
-            <li><strong>Zdjęcia</strong> <br/> 500 </li>
-            <li><strong>Odbitki</strong> <br/>100 szt - 13x19 <br/> Jedwabny papier </li>
+            <li><strong>Zawiera</strong> <br/> 
+                <strong>&#9900;</strong> Przygotowania, <br/>
+                <strong>&#9900;</strong> Ceremonia, <br/> 
+                <strong>&#9900;</strong> Wesele, <br/> 
+                <strong>&#9900;</strong> Mini sesja ślubna w dniu ślubu w okolicy Sali weselnej, <br/>
+                <strong>&#9900; Mełna sesja ślubna w odrębnym dniu</strong>
+            </li>
+            <li><strong>Zdjęcia</strong> <br/> <strong>500</strong> </li>
+            <li><strong>Odbitki</strong> <br/><strong>100 szt</strong> - 15x23 <br/> Jedwabny papier </li>
             <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
-            <li><strong>Dodatki</strong> <br/> Pendrive z pudełkiem na odbitki, Personalizowany album 20x20, 20 rozkładówek</li>         
+            <li><strong>Dodatki</strong> <br/> Pendrive z pudełkiem na odbitki,<strong> Personalizowany album 20x20, 20 rozkładówek</strong></li>         
           </ul>
             `,
         pricing: '',
@@ -78,7 +88,7 @@ const oferts = [
         content: `
             <ul>
                 <li><strong>Zdjęcia</strong> <br/> 30 </li>
-                <li><strong>Odbitki</strong> <br/> 13x19 <br/> Jedwabny papier </li>
+                <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier </li>
                 <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
                 <li><strong>Dodatki</strong> <br/> Teczka na odbitkii </li>         
             </ul>
@@ -89,10 +99,11 @@ const oferts = [
         price: 1200,
         content: `
           <ul>
-            <li><strong>Zdjęcia</strong> <br/> 50 </li>
-            <li><strong>Odbitki</strong> <br/> 13x19 <br/> Jedwabny papier </li>
+            <li><strong>Zdjęcia</strong> <br/> <strong>50</strong> </li>
+            <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier </li>
             <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
-            <li><strong>Dodatki</strong> <br/> Teczka na odbitki, Personalizowany album 20x20, 10 rozkładówek</li>         
+            <li><strong>Dodatki</strong> <br/> Teczka na odbitki, 
+            <strong>Personalizowany album 20x20, 10 rozkładówek</strong></li>         
           </ul>
             `,
       },
@@ -121,7 +132,7 @@ const oferts = [
         content: `
             <ul>
                 <li><strong>Zdjęcia</strong> <br/> 15</li>
-                <li><strong>Odbitki</strong> <br/> 13x19 <br/> jedwabny paier</li>
+                <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
                 <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
                 <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
             </ul>
@@ -133,7 +144,7 @@ const oferts = [
         content: `
             <ul>
                 <li><strong>Zdjęcia</strong> <br/> 25</li>
-                <li><strong>Odbitki</strong> <br/> 13x19 <br/> jedwabny paier</li>
+                <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
                 <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
                 <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
             </ul>
@@ -144,10 +155,10 @@ const oferts = [
         price: 1100,
         content: `
         <ul>
-        <li><strong>Zdjęcia</strong> <br/> 40</li>
-        <li><strong>Odbitki</strong> <br/> 13x19 <br/> jedwabny paier</li>
+        <li><strong>Zdjęcia</strong> <br/> <strong>40</strong></li>
+        <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
         <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-        <li><strong>Dodatki</strong> <br/> Teczka na odbitki, presoanlizowany album 20x20, 10 rozkładówek</li>
+        <li><strong>Dodatki</strong> <br/> Teczka na odbitki,<strong> presoanlizowany album 20x20, 10 rozkładówek</strong></li>
     </ul>
             `,
       },
@@ -181,8 +192,7 @@ export default function OfferA({ ofert }) {
           </div>
         </div>
       </section>
-      <section className="flex w-full sm:flex-col sm:space-y-4 my-24 mx-auto md:items-end justify-between max-w-screen-xl">
-        {/* {loginButton} */}
+      <section className="flex w-full sm:flex-col sm:space-y-4 my-24 mx-auto md:items-end justify-center max-w-screen-xl">
         <Pricing elements={pricing} />
       </section>
     </Layout>
