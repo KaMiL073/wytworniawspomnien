@@ -28,7 +28,7 @@ export default function heroSections() {
           </p>
 
           <div className={styles.groupBtn}>
-            <Link href="/">
+            <Link href="/kontakt">
               <a className={styles.btn} href="/">Umów sie na sesje </a>
             </Link>
             <Link href="/portfolio">

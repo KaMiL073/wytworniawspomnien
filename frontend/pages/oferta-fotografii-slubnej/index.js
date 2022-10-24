@@ -10,6 +10,46 @@ import styles from '../../styles/Oferta.module.scss';
 
 const TITLE = 'Oferta fotografii ślubnej - Wytwórnia Wspomnień';
 const DESCRIPTION = 'Zapraszam Cię do zapoznania się z moją ofertą na reportaż ślubny, sesję ślubną, narzeczeńską. Fotografia Trójmiasto, Gdańsk i okolice.';
+
+const pricing1 = [
+  {
+    label: 'Mini',
+    price: 450,
+    content: `
+        <ul>
+            <li><strong>Zdjęcia</strong> <br/> 15</li>
+            <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
+            <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
+            <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
+        </ul>
+        `,
+  },
+  {
+    label: 'Standard',
+    price: 600,
+    content: `
+        <ul>
+            <li><strong>Zdjęcia</strong> <br/> 25</li>
+            <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
+            <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
+            <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
+        </ul>
+        `,
+  },
+  {
+    label: 'Premium',
+    price: 1100,
+    content: `
+    <ul>
+    <li><strong>Zdjęcia</strong> <br/> <strong>40</strong></li>
+    <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
+    <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
+    <li><strong>Dodatki</strong> <br/> Teczka na odbitki,<strong> presoanlizowany album 20x20, 10 rozkładówek</strong></li>
+</ul>
+        `,
+  },
+];
+
 const pricing = [
   {
     label: 'Standard',
@@ -39,6 +79,7 @@ const pricing = [
     pricing: '',
   },
 ];
+
 
 const pricing2 = [
   {
@@ -99,19 +140,13 @@ export default function Oferta() {
             />
           </div>
           <div className="md:w-3/12 text-center">
-            <h2>Reportaż ślubny</h2>
+            <h2>Narzeczone</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Beatae numquam eligendi alias sequi soluta quia ipsa aspernatur quo, ea,
-              expedita delectus nulla molestiae deleniti explicabo
-              quas culpa veritatis reprehenderit praesentium,
-              quis fuga quisquam suscipit nihil.
-              Laborum necessitatibus placeat perferendis et mollitia praesentium eos,
-              sapiente possimus, laudantium dolore commodi non veritatis eaque minus sunt.
-              Sint praesentium architecto error,
-              eaque at ea reprehenderit facere maxime!
-              Possimus quasi ipsam impedit rerum praesentium laudantium excepturi sit magni,
-              voluptatem consectetur quod, voluptatibus assumenda unde eum.
+              Cennik plenerowych sesji narzeczeńskich podzielony został na trzy warianty. 
+              Pakiety zostały utworzone w taki sposób, 
+              aby każdy znalazł w nich taką ilość zdjęć i dodatków, jaka go interesuje. 
+              Pamiętajcie, że istnieje możliwość powiększenia pakietu w trakcie wykonywania usługi. 
+              Decyzja należy wyłącznie do Was ;)
             </p>
             <Link href="/">
               <a className={styles.btn} href="/">Zobacz przykładową  sesje </a>
@@ -119,23 +154,17 @@ export default function Oferta() {
           </div>
         </div>
         <div className="flex sm:flex-col sm:space-y-4 mx-auto md:items-end justify-center max-w-screen-xl">
-          <Pricing elements={pricing} />
+          <Pricing elements={pricing1} />
         </div>
         <div className="flex flex-col-reverse md:flex-row items-center mx-4 md:mx-0 my-16">
           <div className="md:w-3/12 text-center ">
-            <h2>Sesja ślubna</h2>
+            <h2>Ślubne</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Beatae numquam eligendi alias sequi soluta quia ipsa aspernatur quo, ea,
-              expedita delectus nulla molestiae
-              deleniti explicabo quas culpa veritatis reprehenderit praesentium,
-              quis fuga quisquam suscipit nihil.
-              Laborum necessitatibus placeat perferendis et mollitia praesentium eos,
-              sapiente possimus, laudantium dolore commodi non veritatis eaque minus sunt.
-              Sint praesentium architecto error,
-              eaque at ea reprehenderit facere maxime!
-              Possimus quasi ipsam impedit rerum praesentium laudantium excepturi sit magni,
-              voluptatem consectetur quod, voluptatibus assumenda unde eum.
+              Cennik plenerowych sesji ślubnych podzielony został na dwa warianty. 
+              Dostosujcie odpowiedni pakiet do swoich potrzeb. 
+              Jeśli chcecie, mniejszy pakiet możemy zamienić 
+              w dowolnej chwili na większy. 
+              Decyzję pozostawiam już Wam :)
             </p>
             <Link href="/">
               <a className={styles.btn} href="/">Zobacz przykładową  sesje </a>
@@ -143,7 +172,7 @@ export default function Oferta() {
           </div>
           <div className="md:w-9/12 relative w-full h-60 md:h-[30rem]">
             <Image
-              src="/static/chrzciny.webp"
+              src="//static/sesja-rodzinna.webp"
               alt="Picture of the author"
               layout="fill"
               objectFit="contain"
@@ -152,6 +181,35 @@ export default function Oferta() {
         </div>
         <div className="flex sm:flex-col sm:space-y-4 mx-auto md:items-end justify-center max-w-screen-xl">
           <Pricing elements={pricing2} />
+        </div>
+        <div className="flex flex-col-reverse md:flex-row items-center mx-4 md:mx-0 my-16">
+          <div className="md:w-3/12 text-center ">
+            <h2>Reportaż Ślubny</h2>
+            <p>
+              Cennik reportażu ślubnego został podzielony na dwa pakiety. 
+              Pierwszy pakiet skierowany jest do tych, 
+              którzy chcą uwiecznić cały dzień rozpoczynając 
+              od przygotowań, kończąc na oczepinach.
+              Drugi pakiet rozszerza ofertę o większą ilość odbitek i zdjęć. 
+              Dodatkowo pakiet zawiera odrębną plenerową sesję ślubną oraz piękny, 
+              indywidualnie zaprojektowany 20 stronnicowy album. 
+              Wybór należy oczywiście do Was :)
+            </p>
+            <Link href="/">
+              <a className={styles.btn} href="/">Zobacz przykładową  sesje </a>
+            </Link>
+          </div>
+          <div className="md:w-9/12 relative w-full h-60 md:h-[30rem]">
+            <Image
+              src="//static/sesja-rodzinna.webp"
+              alt="Picture of the author"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+        </div>
+        <div className="flex sm:flex-col sm:space-y-4 mx-auto md:items-end justify-center max-w-screen-xl">
+          <Pricing elements={pricing} />
         </div>
       </section>
     </Layout>

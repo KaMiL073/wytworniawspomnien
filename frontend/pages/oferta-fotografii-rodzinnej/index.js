@@ -79,6 +79,7 @@ const pricing2 = [
   },
 ];
 
+
 export default function Oferta() {
   return (
     <Layout title={TITLE} description={DESCRIPTION}>
@@ -103,20 +104,20 @@ export default function Oferta() {
         <div className="flex flex-col md:flex-row items-center justify-between mx-4 md:mx-0 my-16">
           <div className="md:w-9/12 relative">
             <Image
-              src="/static/sesja-narzeczenska.webp"
+              src="//static/sesja-rodzinna.webp"
               alt="Picture of the author"
               width={866}
               height={538}
             />
           </div>
           <div className="md:w-3/12 text-center">
-            <h2>Cennik plenerowych sesji zdjęciowych</h2>
+            <h2>Rodzinne</h2>
             <p>
-              Cennik plenerowych sesji zdjęciowych obejmuje sesje rodzinne, ciążowe
-              oraz par. Pakiety zostały podzielone w taki sposób,
-              aby każdy znalazł w nich taką ilość zdjęć i dodatków,
-              jaka go interesuje.
-              Istnieje możliwość powiększenia pakietu w trakcie wykonywania usługi.
+              Cennik plenerowych sesji rodzinnych występuje w trzech wariantach. 
+              Pakiety zostały podzielone w taki sposób, 
+              aby każdy znalazł w nich taką ilość zdjęć i dodatków, 
+              jaka go interesuje. 
+              Istnieje możliwość powiększenia pakietu w trakcie wykonywania usługi. 
               Decyzja należy do Was ;)
             </p>
             <Link href="/">
@@ -129,13 +130,38 @@ export default function Oferta() {
         </div>
         <div className="flex flex-col-reverse md:flex-row items-center mx-4 md:mx-0 my-16">
           <div className="md:w-3/12 text-center ">
+            <h2>Ciążowe</h2>
+            <p>
+              Cennik plenerowych sesji ciążowych składa się z trzech wariantów. 
+              Każdy z pakietów różni się od siebie zarówno ilością zdjęć jak i dodatków. 
+              Zawsze istnieje możliwość zwiększenia pakietu w trakcie wykonywania usługi. 
+              Wybór należy wyłącznie do Was :)
+            </p>
+            <Link href="/">
+              <a className={styles.btn} href="/">Zobacz przykładową  sesje </a>
+            </Link>
+          </div>
+          <div className="md:w-9/12 relative w-full h-60 md:h-[30rem]">
+            <Image
+              src="//static/sesja-ciazowa.webp"
+              alt="Picture of the author"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+        </div>
+        <div className="flex sm:flex-col sm:space-y-4 mx-auto md:items-end justify-center max-w-screen-xl">
+          <Pricing elements={pricing} />
+        </div>
+        <div className="flex flex-col-reverse md:flex-row items-center mx-4 md:mx-0 my-16">
+          <div className="md:w-3/12 text-center ">
             <h2>Cennik reportażu z chrztu świętego</h2>
             <p>
-              Cennik reportażu z chrztu świętego został podzielony na dwa pakiety.
-              Pierwszy pakiet skierowany jest dla tych,
-              którzy chcą uwiecznić tylko ceremonię oraz wykonać mini sesję rodzinną.
-              Drugi pakiet jest pełnym reportażem od przygotowań
-              do chrztu kończąc na zdjęciach z przyjęcia.
+              Cennik reportażu z chrztu świętego został podzielony na dwa pakiety. 
+              Pierwszy pakiet skierowany jest dla tych, 
+              którzy chcą uwiecznić tylko ceremonię oraz wykonać mini sesję rodzinną. 
+              Drugi pakiet jest pełnym reportażem od przygotowań 
+              do chrztu kończąc na zdjęciach z przyjęcia. 
               Zdecyduj który wariant jest dla Ciebie :)
             </p>
             <Link href="/">
@@ -144,7 +170,7 @@ export default function Oferta() {
           </div>
           <div className="md:w-9/12 relative w-full h-60 md:h-[30rem]">
             <Image
-              src="/static/chrzciny.webp"
+              src="//static/chrzciny.webp"
               alt="Picture of the author"
               layout="fill"
               objectFit="contain"
