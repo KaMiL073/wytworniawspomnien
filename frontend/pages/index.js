@@ -29,6 +29,7 @@ const OfferSection2 = [
     src: '/static/aboutSection.webp',
     linkUrl: '/o-mnie',
     position: 'left',
+    bg: '/static/pattern.webp',
   },
 ];
 export default function Home() {
@@ -40,6 +41,7 @@ export default function Home() {
         lead={about[0].lead}
         src={about[0].src}
         linkUrl={about[0].linkUrl}
+        bg={about[0].bg}
       />
       <AboutSection
         name={OfferSection2[0].name}
@@ -47,6 +49,7 @@ export default function Home() {
         src={OfferSection2[0].src}
         linkUrl={OfferSection2[0].linkUrl}
         position={OfferSection2[0].position}
+        bg={OfferSection2[0].bg}
       />
 
       <OfferSection />
