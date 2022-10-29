@@ -7,10 +7,17 @@ import DecorRight from '../elements/decorRight';
 import styles from './styles/aboutSection.module.scss';
 
 export default function aboutSection({
-  name, lead, src, linkUrl, position,
+  name, lead, src, linkUrl, position, bg,
 }) {
+  const stylePattern = {
+    backgroundImage: `url(${bg})`,
+    backgroundRepeat: 'repeat',
+  };
+
+  const pattern = (bg === undefined) ? null : stylePattern;
+
   return (
-    <section className={styles.aboutSection}>
+    <section className={`${styles.aboutSection}`} style={pattern}>
       <DecorRight />
       <div className={`flex ${(position === 'left') ? 'md:flex-row-reverse' : 'md:flex-row'} ${styles.content}`}>
         <div className="md:w-9/12">

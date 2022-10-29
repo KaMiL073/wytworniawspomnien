@@ -88,12 +88,12 @@ export async function getStaticProps({ params: { portfolioSlug } }) {
 Portfolio.propTypes = {
   portfolio: PropTypes.arrayOf(PropTypes.shape({
     gallery: PropTypes.arrayOf(PropTypes.shape({
-
+      id: PropTypes.number,
     })),
+    onClose: PropTypes.func.isRequired,
   })),
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  onClose: PropTypes.func.isRequired,
 };
 Portfolio.defaultProps = {
   portfolios: [],
