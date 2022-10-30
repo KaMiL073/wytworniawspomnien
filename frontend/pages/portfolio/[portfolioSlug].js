@@ -37,6 +37,7 @@ export default function Portfolio({ portfolio }) {
         <div className={styles.content}>
           <h1>{portfolio.name}</h1>
           <HeaderDecor />
+          {/* eslint-disable-next-line react/no-danger */}
           <div dangerouslySetInnerHTML={{ __html: portfolio.description }} />
         </div>
       </section>
@@ -86,15 +87,15 @@ export async function getStaticProps({ params: { portfolioSlug } }) {
 }
 
 Portfolio.propTypes = {
-  portfolio: PropTypes.arrayOf(PropTypes.shape({
+  portfolio: PropTypes.shape({
+    name: PropTypes.string,
+    slug: PropTypes.string,
+    description: PropTypes.string,
+    image: PropTypes.string,
     gallery: PropTypes.arrayOf(PropTypes.shape({
-      id: PropTypes.number,
+      id: PropTypes.string,
+      portfolio_id: PropTypes.string,
+      directus_files_id: PropTypes.string,
     })),
-    onClose: PropTypes.func.isRequired,
-  })),
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-};
-Portfolio.defaultProps = {
-  portfolios: [],
+  }).isRequired,
 };

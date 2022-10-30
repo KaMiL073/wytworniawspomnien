@@ -12,7 +12,7 @@ const DESCRIPTION = 'Zapoznaj się z efektami moich poszczególnych prac. Jeśli
 
 export default function Portfolio({ portfolios }) {
   const items = portfolios.map((portfolio) => (
-    <Link href={`/portfolio/${portfolio.slug}`}>
+    <Link key={portfolio.slug} href={`/portfolio/${portfolio.slug}`}>
       <a className={styles.btn} href={`/portfolio/${portfolio.slug}`}>
         <div className="w-full h-64 md:h-56 relative">
           <Image
@@ -65,4 +65,8 @@ Portfolio.propTypes = {
       slug: PropTypes.string.isRequired,
     })),
   })),
+};
+
+Portfolio.defaultProps = {
+  portfolios: [],
 };
