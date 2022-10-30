@@ -51,7 +51,6 @@ export default function Home() {
         position={OfferSection2[0].position}
         bg={OfferSection2[0].bg}
       />
-
       <OfferSection />
       <CtaSection />
     </Layout>
