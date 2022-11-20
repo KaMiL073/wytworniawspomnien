@@ -10,12 +10,15 @@ export default function OffertCarts({ offerts }) {
       <Link href={url}>
         <a href={url}>
           <div className="my-4 md:my-0">
-            <Image
-              src={src}
-              alt="Picture of the author"
-              width={653}
-              height={368}
-            />
+            
+            <div className="w-full h-64 md:h-96 relative">
+              <Image
+                src={src}
+                alt="Picture of the author"
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
             <div className="px-16">
               <h3>{name}</h3>
               <p>{lead}</p>

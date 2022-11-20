@@ -26,7 +26,7 @@ const OfferSection2 = [
     historię z tego wyjątkowego dnia? Czy zależy Wam na wyjątkowej sesji ślubnej, w której to Wy
     będziecie jak gwiazdy na dużym ekranie? Jeśli chcecie postawić na gościa, który robi to z sercem
     i pasją to nie czekajcie. Chętnie wymaluję Wam światłem te niezapomniane chwile!`,
-    src: '/static/aboutSection.webp',
+    src: '/static/sesja-slubna.webp',
     linkUrl: '/o-mnie',
     position: 'left',
     bg: '/static/pattern.webp',

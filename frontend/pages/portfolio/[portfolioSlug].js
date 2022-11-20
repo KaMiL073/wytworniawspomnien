@@ -93,8 +93,8 @@ Portfolio.propTypes = {
     description: PropTypes.string,
     image: PropTypes.string,
     gallery: PropTypes.arrayOf(PropTypes.shape({
-      id: PropTypes.string,
-      portfolio_id: PropTypes.string,
+      id: PropTypes.number,
+      portfolio_id: PropTypes.number,
       directus_files_id: PropTypes.string,
     })),
   }).isRequired,

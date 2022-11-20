@@ -19,8 +19,8 @@ export default function aboutSection({
   return (
     <section className={`${styles.aboutSection}`} style={pattern}>
       <DecorRight />
-      <div className={`flex ${(position === 'left') ? 'md:flex-row-reverse' : 'md:flex-row'} ${styles.content}`}>
-        <div className="md:w-9/12">
+      <div className={`flex sm:flex-col ${(position === 'left') ? 'md:flex-row-reverse' : 'md:flex-row'} ${styles.content}`}>
+        <div>
 
           <Image
             src={src}
