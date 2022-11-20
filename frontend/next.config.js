@@ -11,8 +11,8 @@ module.exports = () => ({
     path: '',
   },
   env: {
-    assetsPath: 'http://localhost/backend/assets/',
-  // RECAPTCHA_SITE: process.env.RECAPTCHA_SITE,
-  // NEXT_PUBLIC_GOOGLE_ANALYTICS: 'UA-52740839-1',
+    assetsPath: 'https://www.dks.pl/backend/assets/',
+    RECAPTCHA_SITE: process.env.RECAPTCHA_SITE,
+    NEXT_PUBLIC_GOOGLE_ANALYTICS: 'UA-52740839-1',
   },
 });

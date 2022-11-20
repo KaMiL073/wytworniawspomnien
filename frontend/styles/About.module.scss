@@ -11,6 +11,13 @@
         flex-col-reverse
         items-center ;
     }
+
+    @media (min-width: 768px) { 
+        .image {
+            height: 40rem;
+        }
+     }
+
         h1 {
             @apply font-bold text-3xl md:text-5xl text-center;			
             font-family: 'PT Serif';

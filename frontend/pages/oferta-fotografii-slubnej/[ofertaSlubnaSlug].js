@@ -23,7 +23,7 @@ const oferts = [
         profesjonalnego, indywidualnego podejścia to zapraszam do kontaktu. Zdjęcia wykonuje na terenie
         Trójmiasta – Gdańsk, Sopot, Gdynia oraz w okolicach.
         `,
-    src: '//static/sesja-rodzinna.webp',
+    src: '//static/reportaż-slubny.webp',
     seo_title: 'Oferta – Reportaż ślubny - Wytwórnia Wspomnień',
     seo_description: 'Reportaż ślubny stanowi niezwykłą pamiątkę z wyjątkowego dnia jakim jest ślub. Uwiecznię dla Ciebie te wyjątkowe chwile! Fotografia Trójmiasto, Gdańsk i okolice',
     pricing: [
@@ -78,7 +78,7 @@ const oferts = [
         wyłącznie na sobie. Przed sesją wyślę Wam wszelkie informację jak się do niej przygotować. Zdjęcia
         wykonuje na terenie Trójmiasta – Gdańsk, Sopot, Gdynia oraz w okolicach.
         `,
-    src: '//static/sesja-rodzinna.webp',
+    src: '//static/sesja-slubna.webp',
     seo_title: 'Oferta – Sesja Ślubna - Wytwórnia Wspomnień',
     seo_description: 'Sesja ślubna w plenerze, to idealna okazja na uwiecznienie Was w wyjątkowej roli Państwa Młodych. Fotografia Trójmiasto, Gdańsk i okolice.',
     pricing: [
@@ -175,7 +175,7 @@ export default function OfferA({ ofert }) {
       <section className={styles.aboutSection}>
         <Decor />
         <div className={`flex ${styles.content}`}>
-          <div className="flex relative w-full h-60 md:h-[30rem]">
+          <div className={`flex relative w-full h-60 md:h-96 ${styles.image}`}>
             <Image
               src={ofert.src}
               alt="Picture of the author"
@@ -236,6 +236,6 @@ OfferA.propTypes = {
     lead: PropTypes.string,
     seo_title: PropTypes.string,
     seo_description: PropTypes.string,
-    pricing: PropTypes.number,
+    pricing: PropTypes.array,
   }).isRequired,
 };

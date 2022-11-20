@@ -15,7 +15,7 @@ export default function coontact() {
       <section className={styles.aboutSection}>
         <Decor />
         <div className={`flex ${styles.content}`}>
-          <div className="flex relative w-full h-60 md:h-[30rem]">
+          <div className={`flex relative w-full h-60 md:h-96 ${styles.image}`}>
             <Image
               src="/static/aboutSection.webp"
               alt="Picture of the author"

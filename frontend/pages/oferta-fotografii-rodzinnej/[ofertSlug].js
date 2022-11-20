@@ -192,7 +192,7 @@ export default function Offer({ ofert }) {
       <section className={styles.aboutSection}>
         <Decor />
         <div className={`flex ${styles.content}`}>
-          <div className="flex relative w-full h-60 md:h-[30rem]">
+          <div className={`flex relative w-full h-60 md:h-96 ${styles.image}`}>
             <Image
               src={ofert.src}
               alt="Picture of the author"
@@ -253,6 +253,6 @@ Offer.propTypes = {
     lead: PropTypes.string,
     seo_title: PropTypes.string,
     seo_description: PropTypes.string,
-    pricing: PropTypes.number,
+    pricing: PropTypes.array,
   }).isRequired,
 };

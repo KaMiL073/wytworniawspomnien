@@ -39,7 +39,7 @@ export default function DropdownSubmenu({ elements, label, link }) {
   ));
 
   return (
-    <li className={`${isOpened ? 'bg-dks-red text-white lg:bg-white lg:text-black' : ''}`}>
+    // <li className={`${isOpened ? 'bg-dks-red text-white lg:bg-white lg:text-black' : ''}`}>
       <div
         className={`${styles.dropdown} ${isOpened ? styles.opened : ''}`}
         role="button"
@@ -61,7 +61,7 @@ export default function DropdownSubmenu({ elements, label, link }) {
           {dropdownItems}
         </ul>
       </div>
-    </li>
+    // </li>
   );
 }
 
