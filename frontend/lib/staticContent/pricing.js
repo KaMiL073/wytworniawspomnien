@@ -184,7 +184,7 @@ export default function getPricing(slug) {
                 indywidualnie zaprojektowany 20 stronnicowy album. 
                 Wybór należy oczywiście do Was :)`,
       url: '/',
-      img: '//static/sesja-rodzinna.webp',
+      img: '//static/reportaż-slubny.webp',
       pricing: pricing3,
     },
     'sesja-slubna': {
@@ -196,7 +196,7 @@ export default function getPricing(slug) {
                 w dowolnej chwili na większy. 
                 Decyzję pozostawiam już Wam :)`,
       url: '/',
-      img: '//static/sesja-narzeczenska.webp',
+      img: '//static/sesja-slubna.webp',
       pricing: pricing2,
     },
     'sesja-narzeczenska': {

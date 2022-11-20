@@ -46,4 +46,10 @@
         @apply text-black text-center mx-auto block rounded-xl md:w-3/4 py-3 px-6   ;
         background: #EDD6CF;
     }
+
+    @media (min-width: 768px) { 
+        .image {
+            height: 40rem;
+        }
+    }
 }

@@ -13,15 +13,21 @@ export default function aboutSection({
     backgroundImage: `url(${bg})`,
     backgroundRepeat: 'repeat',
   };
-
+  
   const pattern = (bg === undefined) ? null : stylePattern;
+  
+  let Decor;
+  if (pattern) {
 
+  } else {
+    Decor = <DecorRight />;
+  }
+  
   return (
     <section className={`${styles.aboutSection}`} style={pattern}>
-      <DecorRight />
+      {Decor}
       <div className={`flex sm:flex-col ${(position === 'left') ? 'md:flex-row-reverse' : 'md:flex-row'} ${styles.content}`}>
         <div>
-
           <Image
             src={src}
             alt="Picture of the author"
