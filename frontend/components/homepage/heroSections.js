@@ -12,10 +12,10 @@ export default function heroSections() {
       <div className={`md:flex items-center ${styles.content}`}>
         <div className="md:w-1/2 relative">
           <h1>
-            Fotografia rodzinna
+          Fotografia ślubna i rodzinna 
             <br />
             {' '}
-            - Gdańsk i okolice
+            – Gdańsk i okolice
           </h1>
           <HeaderDecor />
           <p>
@@ -36,13 +36,15 @@ export default function heroSections() {
             </Link>
           </div>
         </div>
-        <div className={`md:w-1/2 ${styles.heroImges}`}>
-          <Image
-            src="/static/home-hero.webp"
-            alt="Picture of the author"
-            width={800}
-            height={800}
-          />
+        <div className={`md:w-1/2`}>
+          <div className={`flex relative w-full h-60 ${styles.heroImges}`}>
+            <Image
+              src="/static/home-hero.webp"
+              alt="Picture of the author"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -11,10 +11,11 @@ const about = [
   {
     name: 'Tu Tomek, Fotograf z Gdańska',
     lead: `Zapraszam Cię na wspaniałą fotograficzną przygodę, 
-           w której to ty będziesz jej częścią. 
-           Zapraszam Cię zarówno na plenerową sesję rodzinną, 
-           sesję ciążową jak i sesję narzeczeńską. 
-           Wykonam dla Ciebie także reportaż z chrztu świętego.`,
+          w której to ty będziesz jej częścią.
+          Zapraszam Cię zarówno na plenerową sesję ślubną, 
+          sesję rodzinną, sesję ciążową jak i sesję
+          narzeczeńską. Wykonam dla Ciebie reportaż ślubny 
+          oraz reportaż z chrztu świętego.`,
     src: '/static/aboutSection.webp',
     linkUrl: '/o-mnie',
   },
@@ -27,7 +28,7 @@ const OfferSection2 = [
     będziecie jak gwiazdy na dużym ekranie? Jeśli chcecie postawić na gościa, który robi to z sercem
     i pasją to nie czekajcie. Chętnie wymaluję Wam światłem te niezapomniane chwile!`,
     src: '/static/sesja-slubna.webp',
-    linkUrl: '/o-mnie',
+    linkUrl: '/oferta-fotografii-slubnej',
     position: 'left',
     bg: '/static/pattern.webp',
   },

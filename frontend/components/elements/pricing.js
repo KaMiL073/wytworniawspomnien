@@ -4,7 +4,7 @@ import styles from './styles/Pricing.module.scss';
 
 export default function Pricing({ elements }) {
   const items = elements.map((element, i) => (
-    <div key={i} className={`h-[73rem] mx-8 ${styles.item}`}>
+    <div key={i} className={`mx-8 ${styles.item}`}>
       <div className={styles.header}>
         <h5 className={styles.label}>{element.label}</h5>
         <div className={styles.price}>

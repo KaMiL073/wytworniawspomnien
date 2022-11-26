@@ -17,7 +17,7 @@ export default function coontact() {
         <div className={`flex ${styles.content}`}>
           <div className={`flex relative w-full h-60 md:h-96 ${styles.image}`}>
             <Image
-              src="/static/aboutSection.webp"
+              src="/static/kontakt.webp"
               alt="Picture of the author"
               layout="fill"
               objectFit="contain"
@@ -37,11 +37,11 @@ export default function coontact() {
             <p>
               <EmailIcon className="w-6 h-6 mr-2 mb-2" />
               {' '}
-              kontakt@wytworniawspomnien.p
+              kontakt@wytworniawspomnien.pl
               <br />
               <LocalPhoneIcon className="w-6 h-6 mr-2 mb-2" />
               {' '}
-              +48 000 - 000 - 000
+              +48 452 540 070
             </p>
           </div>
         </div>

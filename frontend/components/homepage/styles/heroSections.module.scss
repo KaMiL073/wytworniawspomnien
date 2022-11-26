@@ -7,7 +7,8 @@
         @apply max-w-screen-xl mx-auto pt-8 md:pt-0 items-center;
 
         .heroImges {
-            @apply relative top-6 md:top-16;
+            @apply top-6 md:top-16;
+            height: 40rem;
 
         }
     }
