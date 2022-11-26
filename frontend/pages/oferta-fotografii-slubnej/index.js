@@ -21,7 +21,7 @@ export default function Oferta() {
 
         <div className={styles.content}>
           <h1>Oferta fotografii ślubnej</h1>
-          <HeaderDecor />
+            <HeaderDecor />
           <p>
             Witam Was serdecznie!
             Poniżej chciałbym przedstawić Wam moją obecną ofertę na reportaż ślubny

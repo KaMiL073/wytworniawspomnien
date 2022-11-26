@@ -6,10 +6,10 @@ export default function CtaSection() {
     <section className={`w-full max-h-screen relative py-8 mt-4 ${styles.ctaSection}`}>
       <div className="flex flex-col md:flex-row max-w-screen-xl mx-auto items-center">
         <div className="w-1/2">
-          <p className="text-3xl">Lorem ipsum dolor sit amet</p>
+          <p className="text-3xl">Fotografia ślubna i rodzinna – Gdańsk i okolice</p>
         </div>
         <div className="w-1/2">
-          <Link href="/">
+          <Link href="/kontakt">
             <a className={styles.btn} href="/">Umów sie na sesje </a>
           </Link>
         </div>

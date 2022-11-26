@@ -26,21 +26,21 @@ export default function aboutSection({
   return (
     <section className={`${styles.aboutSection}`} style={pattern}>
       {Decor}
-      <div className={`flex sm:flex-col ${(position === 'left') ? 'md:flex-row-reverse' : 'md:flex-row'} ${styles.content}`}>
-        <div>
+      <div className={`flex sm:flex-col md:flex-col lg:px-4 ${(position === 'left') ? 'lg:flex-row-reverse' : 'lg:flex-row'} ${styles.content}`}>
+        <div className={`flex relative w-full h-60 ${styles.imageOfert}`}>
           <Image
             src={src}
             alt="Picture of the author"
-            width={875}
-            height={628}
+            layout="fill"
+            objectFit="contain"
           />
         </div>
-        <div className="md:w-3/12 mt-16 md:mt-0">
+        <div className="lg:w-6/12 xl:w-3/12 mt-16 md:mt-0">
           <h2>{name}</h2>
           <HeaderDecor />
           <p>{lead}</p>
           <Link href={linkUrl}>
-            <a className={styles.btn} href={linkUrl}>Więcje</a>
+            <a className={styles.btn} href={linkUrl}>Więcej</a>
           </Link>
         </div>
       </div>

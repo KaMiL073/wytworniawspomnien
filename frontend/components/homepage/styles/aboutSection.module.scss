@@ -1,6 +1,15 @@
 .aboutSection { 
     @apply w-full max-h-screen relative;
 
+    .imageOfert {
+        height: 28rem;
+    }
+    @media (min-width: 768px) { 
+        .imageOfert {
+            height: 43rem;
+        }
+     }
+
     .content {
         @apply 
         max-w-screen-xl 
