@@ -6,7 +6,7 @@ export default function getPricing(slug) {
       content: `
               <ul>
                   <li><strong>Zdjęcia</strong> <br/> 20</li>
-                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
+                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
                   <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
                   <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
               </ul>
@@ -18,7 +18,7 @@ export default function getPricing(slug) {
       content: `
               <ul>
                   <li><strong>Zdjęcia</strong> <br/> 30</li>
-                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
+                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
                   <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
                   <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
               </ul>
@@ -30,7 +30,7 @@ export default function getPricing(slug) {
       content: `
           <ul>
           <li><strong>Zdjęcia</strong> <br/> 50</li>
-          <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
+          <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
           <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
           <li><strong>Dodatki</strong> <br/> Teczka na odbitki, Personalizowany album 20x20, 10 rozkładówek</li>
       </ul>
@@ -99,7 +99,7 @@ export default function getPricing(slug) {
       content: `
               <ul>
                   <li><strong>Zdjęcia</strong> <br/> 15</li>
-                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
+                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
                   <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
                   <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
               </ul>
@@ -111,7 +111,7 @@ export default function getPricing(slug) {
       content: `
               <ul>
                   <li><strong>Zdjęcia</strong> <br/> 25</li>
-                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
+                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
                   <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
                   <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
               </ul>
@@ -123,7 +123,7 @@ export default function getPricing(slug) {
       content: `
           <ul>
           <li><strong>Zdjęcia</strong> <br/> <strong>40</strong></li>
-          <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
+          <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
           <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
           <li><strong>Dodatki</strong> <br/> Teczka na odbitki,<strong> Personalizowany album 20x20, 10 rozkładówek</strong></li>
       </ul>

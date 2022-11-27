@@ -16,7 +16,7 @@ export default function Omnie() {
         <h1> Tu Tomek, Fotograf z Gdańska</h1>
         <HeaderDecor />
         <div className={`flex ${styles.content}`}>
-          <div className="lg:w-2/4 xl:w-3/12 px-8 2xl:px-0">
+          <div className={`lg:w-2/4 px-8 2xl:px-0`}>
             <h2>Kim jestem</h2>
             <p>
               Cześć, tu Tomek. Dwukrotny laureat nagrody złotego ojca
@@ -32,27 +32,24 @@ export default function Omnie() {
               Fotografia pozwala mi być jak malarz, tylko zamiast palety farb używam światła.
             </p>
           </div>
-          {/* <div className="relative w-full h-96 lg:h-[45rem]"> */}
-          <div className="flex relative">
-
+          <div className={`flex w-full relative ${styles.imageAbout}`}>
             <Image
               src="/static/aboutSection.webp"
               alt="Picture of the author"
-              width={875}
-              height={628}
+              layout="fill"
+              objectFit="contain"
             />
           </div>
         </div>
       </section>
       <section className={styles.section}>
-        <div className={`flex ${styles.content}`}>
-          <div>
-            {/* <div className="flex relative h-full w-96 lg:h-[45rem]"> */}
+        <div className={`flex flex-col md:flex-row ${styles.content}`}>
+          <div className={`flex w-full relative ${styles.imageAbout}`}>
             <Image
               src="/static/aparat.webp"
               alt="Picture of the author"
-              width={676}
-              height={658}
+              layout="fill"
+              objectFit="contain"
             />
           </div>
           <div className="md:w-2/4 px-8 2xl:px-0 z-10">
@@ -79,8 +76,16 @@ export default function Omnie() {
         </div>
       </section>
       <section className={styles.section}>
-        <div className={`flex ${styles.content}`}>
-          <div className="md:w-3/12 mt-16 md:mt-0">
+        <div className={`flex flex-col md:flex-row-reverse ${styles.content}`}>
+          <div className={`flex w-full relative ${styles.imageAbout}`}>
+            <Image
+              src="/static/O-mnie-3.webp"
+              alt="Picture of the author"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+          <div className="md:w-2/4 mt-16 md:mt-0 px-8">
             <h2>Jaki styl fotografii lubię najbardziej?</h2>
             <p>
               Reportaż w stylu ninja.
@@ -100,14 +105,7 @@ export default function Omnie() {
               kooperacja jest bardzo istotna, dołożę wszelkich starań aby taka ona właśnie była.
             </p>
           </div>
-          <div className={`flex ${styles.content}`}>
-            <Image
-              src="/static/O-mnie-3.webp"
-              alt="Picture of the author"
-              width={653}
-              height={539}
-            />
-          </div>
+          
         </div>
       </section>
 

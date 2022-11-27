@@ -35,13 +35,15 @@ export default function aboutSection({
             objectFit="contain"
           />
         </div>
-        <div className="lg:w-6/12 xl:w-3/12 mt-16 md:mt-0">
+        <div className="lg:w-6/12 xl:w-3/12">
           <h2>{name}</h2>
           <HeaderDecor />
-          <p>{lead}</p>
-          <Link href={linkUrl}>
-            <a className={styles.btn} href={linkUrl}>Więcej</a>
-          </Link>
+          <div className="mx-8 lg:mx-0">
+            <p>{lead}</p>
+            <Link href={linkUrl}>
+              <a className={styles.btn} href={linkUrl}>Więcej</a>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
