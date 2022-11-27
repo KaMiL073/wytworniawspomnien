@@ -12,12 +12,6 @@
         items-center ;
     }
 
-    @media (min-width: 768px) { 
-        .image {
-            height: 40rem;
-        }
-     }
-
         h1 {
             @apply font-bold text-3xl md:text-5xl text-center;			
             font-family: 'PT Serif';
@@ -37,7 +31,7 @@
             padding: 1rem 0 4rem 0;
             // text-align: center;
         
-            color: #fff;
+            color: #E5E2E1;
         }
         .btn {
             @apply text-black text-center mx-auto block rounded-xl md:w-1/2 py-3 px-6 m-8;
@@ -51,10 +45,10 @@
         @apply 
         max-w-screen-xl 
         mx-auto 
-        flex-col 
-        md:flex-row 
         items-center ;
-        
+        // flex-col 
+        // md:flex-row 
+
         h2 {
             @apply font-bold text-2xl md:text-4xl;			
             font-family: 'PT Serif';
@@ -69,10 +63,19 @@
             padding-bottom: 4rem;
             // text-align: center;
             padding: 2rem 0 4rem 0;
-            color: #000;
+            color: #5E5E5E;
         }
 
     }
 
 }
+
+.imageAbout {
+    height: 28rem;
+}
+@media (min-width: 768px) { 
+    .imageAbout {
+        height: 40rem;
+    }
+ }
 

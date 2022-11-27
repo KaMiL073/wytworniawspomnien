@@ -15,15 +15,15 @@ export default function coontact() {
       <section className={styles.aboutSection}>
         <Decor />
         <div className={`flex ${styles.content}`}>
-          <div className={`flex relative w-full h-60 md:h-96 ${styles.image}`}>
+          <div className={`flex relative w-full ${styles.imageAbout}`}>
             <Image
-              src="/static/aboutSection.webp"
+              src="/static/kontakt.webp"
               alt="Picture of the author"
               layout="fill"
               objectFit="contain"
             />
           </div>
-          <div className="lg:w-2/4 xl:w-3/12 px-8 2xl:px-0 text-center">
+          <div className="lg:w-2/4 px-8 2xl:px-0 text-center">
             <h1>Kontakt</h1>
             <p>
               <HeaderDecor />
@@ -37,11 +37,11 @@ export default function coontact() {
             <p>
               <EmailIcon className="w-6 h-6 mr-2 mb-2" />
               {' '}
-              kontakt@wytworniawspomnien.p
+              kontakt@wytworniawspomnien.pl
               <br />
               <LocalPhoneIcon className="w-6 h-6 mr-2 mb-2" />
               {' '}
-              +48 000 - 000 - 000
+              +48 452 540 070
             </p>
           </div>
         </div>

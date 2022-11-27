@@ -6,9 +6,14 @@ import Decor from '../../components/elements/decor';
 import HeaderDecor from '../../components/elements/headerDecor';
 import styles from '../../styles/About.module.scss';
 import Pricing from '../../components/elements/pricing';
+import getPricing from '../../lib/staticContent/pricing';
 
 const TITLE = 'Wytworniawspomnien';
 const DESCRIPTION = 'Opis';
+const sesjaRodzinna = getPricing('sesja-rodzinna');
+const sesjaCiazowa = getPricing('sesja-ciazowa');
+const reportazZChrztuSwietego = getPricing('reportaz-z-chrztu-swietego');
+
 
 const oferts = [
   {
@@ -31,44 +36,7 @@ const oferts = [
     src: '//static/sesja-rodzinna.webp',
     seo_title: 'Oferta – Sesja rodzinna - Wytwórnia Wspomnień',
     seo_description: 'Sesja rodzinna w plenerze jest wspaniałą okazją do uwiecznienia Waszych wspólnych niezapomnianych chwil.  Fotografia Trójmiasto, Gdańsk i okolice.',
-    pricing: [
-      {
-        label: 'Mini',
-        price: 500,
-        content: `
-            <ul>
-                <li><strong>Zdjęcia</strong> <br/> 20</li>
-                <li><strong>Odbitki</strong> <br/> 13x23 <br/> jedwabny paier</li>
-                <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-                <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
-            </ul>
-            `,
-      },
-      {
-        label: 'Standard',
-        price: 700,
-        content: `
-            <ul>
-                <li><strong>Zdjęcia</strong> <br/> 30</li>
-                <li><strong>Odbitki</strong> <br/> 13x23 <br/> jedwabny paier</li>
-                <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-                <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
-            </ul>
-            `,
-      },
-      {
-        label: 'Premium',
-        price: 1200,
-        content: `
-        <ul>
-        <li><strong>Zdjęcia</strong> <br/> <strong>50</strong></li>
-        <li><strong>Odbitki</strong> <br/> 13x23 <br/> jedwabny paier</li>
-        <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-        <li><strong>Dodatki</strong> <br/> Teczka na odbitki, <strong>presoanlizowany album 20x20, 10 rozkładówek</strong></li>
-    </ul>
-            `,
-      },
-    ],
+    pricing: sesjaRodzinna.pricing,
   },
   {
     slug: 'sesja-ciazowa',
@@ -86,44 +54,7 @@ const oferts = [
     src: '//static/sesja-ciazowa.webp',
     seo_title: 'Oferta – Sesja ciążowa - Wytwórnia Wspomnień',
     seo_description: 'Sesja brzuszkowa w plenerze, to wyjątkowa okazja na uwiecznienie Waszej ciąży. Fotografia Trójmiasto, Gdańsk i okolice.',
-    pricing: [
-      {
-        label: 'Mini',
-        price: 500,
-        content: `
-            <ul>
-                <li><strong>Zdjęcia</strong> <br/> 20</li>
-                <li><strong>Odbitki</strong> <br/> 13x23 <br/> jedwabny paier</li>
-                <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-                <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
-            </ul>
-            `,
-      },
-      {
-        label: 'Standard',
-        price: 700,
-        content: `
-            <ul>
-                <li><strong>Zdjęcia</strong> <br/> 30</li>
-                <li><strong>Odbitki</strong> <br/> 13x23 <br/> jedwabny paier</li>
-                <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-                <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
-            </ul>
-            `,
-      },
-      {
-        label: 'Premium',
-        price: 1200,
-        content: `
-        <ul>
-        <li><strong>Zdjęcia</strong> <br/> <strong>50</strong></li>
-        <li><strong>Odbitki</strong> <br/> 13x23 <br/> jedwabny paier</li>
-        <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-        <li><strong>Dodatki</strong> <br/> Teczka na odbitki, <strong>presoanlizowany album 20x20, 10 rozkładówek</strong></li>
-    </ul>
-            `,
-      },
-    ],
+    pricing: sesjaCiazowa.pricing,
   },
   {
     slug: 'reportaz-z-chrztu-swietego',
@@ -142,47 +73,13 @@ const oferts = [
     src: '//static/chrzciny.webp',
     seo_title: 'Oferta – Chrzciny - Wytwórnia Wspomnień',
     seo_description: 'Sakrament Chrztu Świętego, to wyjątkowy moment w życiu rodziny. Uwiecznij te wspaniałe chwile na pamiątkę dla Twojego dziecka. Trójmiasto, Gdańsk i okolice.',
-    pricing: [
-      {
-        label: 'Standard',
-        price: 700,
-        content: `
-            <ul>
-                <li><strong>Zawiera</strong> <br/> 
-                  <strong>&#9900;</strong> Ceremonia, <br/> 
-                  <strong>&#9900;</strong> Mini sesja rodzinna <br/><br /><br />
-                </li>
-                <li><strong>Zdjęcia</strong> <br/> 30 </li>
-                <li><strong>Odbitki</strong> <br/>50 szt - 15x23 <br/> Jedwabny papier </li>
-                <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
-                <li><strong>Dodatki</strong> <br/> Teczka na odbitki </li>         
-            </ul>
-            `,
-      },
-      {
-        label: 'Premium',
-        price: 1200,
-        content: `
-          <ul>
-            <li><strong>Zawiera</strong> <br/> 
-              <strong>&#9900;</strong> Przygotowania, <br />
-              <strong>&#9900;</strong> Ceremonia, <br />
-              <strong>&#9900;</strong> Mini sesja rodzinna, <br /> 
-              <strong>&#9900;</strong> Przyjęcie <br />
-            </li>
-            <li><strong>Zdjęcia</strong> <br/> <strong>50 </strong></li>
-            <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier </li>
-            <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
-            <li><strong>Dodatki</strong> <br/> Teczka na odbitki, <strong>Personalizowany album 20x20, 10 rozkładówek</strong></li>         
-          </ul>
-            `,
-      },
-    ],
+    pricing: reportazZChrztuSwietego.pricing,
   },
 
 ];
 
 export default function Offer({ ofert }) {
+
   const metaTitle = (ofert.seo_title == null) ? TITLE : ofert.seo_title;
   const metaDescription = (ofert.seo_description == null) ? DESCRIPTION : ofert.seo_description;
   const { pricing } = ofert;
@@ -192,7 +89,7 @@ export default function Offer({ ofert }) {
       <section className={styles.aboutSection}>
         <Decor />
         <div className={`flex ${styles.content}`}>
-          <div className={`flex relative w-full h-60 md:h-96 ${styles.image}`}>
+          <div className={`flex relative w-full ${styles.imageAbout}`}>
             <Image
               src={ofert.src}
               alt="Picture of the author"

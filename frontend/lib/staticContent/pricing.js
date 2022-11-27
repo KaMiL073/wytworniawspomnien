@@ -6,7 +6,7 @@ export default function getPricing(slug) {
       content: `
               <ul>
                   <li><strong>Zdjęcia</strong> <br/> 20</li>
-                  <li><strong>Odbitki</strong> <br/> 13x23 <br/> jedwabny paier</li>
+                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
                   <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
                   <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
               </ul>
@@ -18,7 +18,7 @@ export default function getPricing(slug) {
       content: `
               <ul>
                   <li><strong>Zdjęcia</strong> <br/> 30</li>
-                  <li><strong>Odbitki</strong> <br/> 13x23 <br/> jedwabny paier</li>
+                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
                   <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
                   <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
               </ul>
@@ -30,9 +30,9 @@ export default function getPricing(slug) {
       content: `
           <ul>
           <li><strong>Zdjęcia</strong> <br/> 50</li>
-          <li><strong>Odbitki</strong> <br/> 13x23 <br/> jedwabny paier</li>
+          <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
           <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-          <li><strong>Dodatki</strong> <br/> Teczka na odbitki, presoanlizowany album 20x20, 10 rozkładówek</li>
+          <li><strong>Dodatki</strong> <br/> Teczka na odbitki, Personalizowany album 20x20, 10 rozkładówek</li>
       </ul>
               `,
     },
@@ -44,9 +44,8 @@ export default function getPricing(slug) {
       price: 700,
       content: `
             <ul>
-                <li><strong>Zawiera</strong> <br/> Ceremonia, mini sesja rodzinna</li>
                 <li><strong>Zdjęcia</strong> <br/> 30 </li>
-                <li><strong>Odbitki</strong> <br/>50 szt - 13x23 <br/> Jedwabny papier </li>
+                <li><strong>Odbitki</strong> <br/>15x23 <br/> Jedwabny papier </li>
                 <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
                 <li><strong>Dodatki</strong> <br/> Teczka na odbitki </li>         
             </ul>
@@ -57,9 +56,8 @@ export default function getPricing(slug) {
       price: 1200,
       content: `
         <ul>
-            <li><strong>Zawiera</strong> <br/> Przygotowania, ceremonia, mini sesja rodzinna, przyjęcie</li>
             <li><strong>Zdjęcia</strong> <br/> 50 </li>
-            <li><strong>Odbitki</strong> <br/> 13x23 <br/> Jedwabny papier </li>
+            <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier </li>
             <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
             <li><strong>Dodatki</strong> <br/> Teczka na odbitki, Personalizowany album 20x20, 10 rozkładówek</li>         
         </ul>
@@ -75,8 +73,7 @@ export default function getPricing(slug) {
               <ul>
                   <li><strong>Zawiera</strong> <br/> Przygotowania, ceremonia, wesele, mini sesja ślubna w dniu ślubu w okolicy Sali weselnej</li>
                   <li><strong>Zdjęcia</strong> <br/> 400 </li>
-                  <li><strong>Odbitki</strong> <br/>50 szt - 13x19 <br/> Jedwabny papier </li>
-                  <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
+                  <li><strong>Odbitki</strong> <br/>50 szt - 15x23 <br/> Jedwabny papier </li>
                   <li><strong>Dodatki</strong> <br/> Pendrive z pudełkiem na odbitki </li>         
               </ul>
               `,
@@ -88,8 +85,7 @@ export default function getPricing(slug) {
             <ul>
               <li><strong>Zawiera</strong> <br/> Przygotowania, ceremonia, wesele, mini sesja w dniu ślubu w okolicy Sali weselnej, pełna sesja ślubna w odrębnym dniu</li>
               <li><strong>Zdjęcia</strong> <br/> 500 </li>
-              <li><strong>Odbitki</strong> <br/>100 szt - 13x19 <br/> Jedwabny papier </li>
-              <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
+              <li><strong>Odbitki</strong> <br/> 100 szt - 15x23 <br/> Jedwabny papier </li>
               <li><strong>Dodatki</strong> <br/> Pendrive z pudełkiem na odbitki, Personalizowany album 20x20, 20 rozkładówek</li>         
             </ul>
               `,
@@ -103,7 +99,7 @@ export default function getPricing(slug) {
       content: `
               <ul>
                   <li><strong>Zdjęcia</strong> <br/> 15</li>
-                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
+                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
                   <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
                   <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
               </ul>
@@ -115,7 +111,7 @@ export default function getPricing(slug) {
       content: `
               <ul>
                   <li><strong>Zdjęcia</strong> <br/> 25</li>
-                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
+                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
                   <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
                   <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
               </ul>
@@ -127,9 +123,9 @@ export default function getPricing(slug) {
       content: `
           <ul>
           <li><strong>Zdjęcia</strong> <br/> <strong>40</strong></li>
-          <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
+          <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
           <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-          <li><strong>Dodatki</strong> <br/> Teczka na odbitki,<strong> presoanlizowany album 20x20, 10 rozkładówek</strong></li>
+          <li><strong>Dodatki</strong> <br/> Teczka na odbitki,<strong> Personalizowany album 20x20, 10 rozkładówek</strong></li>
       </ul>
               `,
     },
