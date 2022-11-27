@@ -4,7 +4,7 @@
     .imageOfert {
         height: 28rem;
     }
-    @media (min-width: 768px) { 
+    @media (min-width: 1024px) { 
         .imageOfert {
             height: 43rem;
         }
@@ -34,7 +34,7 @@
         color: #5E5E5E;
     }
     .btn {
-        @apply text-black text-center mx-auto block rounded-xl md:w-1/2 py-3 px-6 m-8;
+        @apply text-black text-center block rounded-xl md:w-1/2 py-3 px-6 mx-auto mt-8;
         background: #EDD6CF;
     }
 

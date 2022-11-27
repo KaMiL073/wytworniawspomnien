@@ -8,9 +8,15 @@
 
         .heroImges {
             @apply top-6 md:top-16;
-            height: 40rem;
+            height: 24rem;
 
         }
+        @media (min-width: 640px) { 
+            .heroImges {
+                height: 40rem;
+            }
+         }
+
     }
     h1 {
         @apply font-bold text-3xl md:text-5xl text-center;			

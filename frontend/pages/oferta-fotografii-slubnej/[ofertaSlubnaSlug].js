@@ -5,9 +5,13 @@ import Decor from '../../components/elements/decor';
 import HeaderDecor from '../../components/elements/headerDecor';
 import styles from '../../styles/About.module.scss';
 import Pricing from '../../components/elements/pricing';
+import getPricing from '../../lib/staticContent/pricing';
 
 const TITLE = 'Wytworniawspomnien';
 const DESCRIPTION = 'Opis';
+const reportazSlubny = getPricing('reportaz-slubny');
+const sesjaSlubna = getPricing('sesja-slubna');
+const sesjaNarzeczenska = getPricing('sesja-narzeczenska');
 
 const oferts = [
   {
@@ -26,46 +30,7 @@ const oferts = [
     src: '//static/reportaż-slubny.webp',
     seo_title: 'Oferta – Reportaż ślubny - Wytwórnia Wspomnień',
     seo_description: 'Reportaż ślubny stanowi niezwykłą pamiątkę z wyjątkowego dnia jakim jest ślub. Uwiecznię dla Ciebie te wyjątkowe chwile! Fotografia Trójmiasto, Gdańsk i okolice',
-    pricing: [
-      {
-        label: 'Standard',
-        price: 3000,
-        content: `
-            <ul>
-                <li><strong>Zawiera</strong> <br/> 
-                    <strong>&#9900;</strong> Przygotowania, <br/>
-                    <strong>&#9900;</strong> Ceremonia, <br/>
-                    <strong>&#9900;</strong> wesele, <br/>
-                    <strong>&#9900;</strong> Mini sesja ślubna w dniu ślubu w okolicy Sali weselnej, <br/><br/>
-                 </li>
-                <li><strong>Zdjęcia</strong> <br/> 400 </li>
-                <li><strong>Odbitki</strong> <br/>50 szt - 15x23 <br/> Jedwabny papier </li>
-                <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
-                <li><strong>Dodatki</strong> <br/> Pendrive z pudełkiem na odbitki </li>         
-            </ul>
-            `,
-      },
-      {
-        label: 'Premium',
-        price: 4000,
-        content: `
-          <ul>
-            <li><strong>Zawiera</strong> <br/> 
-                <strong>&#9900;</strong> Przygotowania, <br/>
-                <strong>&#9900;</strong> Ceremonia, <br/> 
-                <strong>&#9900;</strong> Wesele, <br/> 
-                <strong>&#9900;</strong> Mini sesja ślubna w dniu ślubu w okolicy Sali weselnej, <br/>
-                <strong>&#9900; Mełna sesja ślubna w odrębnym dniu</strong>
-            </li>
-            <li><strong>Zdjęcia</strong> <br/> <strong>500</strong> </li>
-            <li><strong>Odbitki</strong> <br/><strong>100 szt</strong> - 15x23 <br/> Jedwabny papier </li>
-            <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
-            <li><strong>Dodatki</strong> <br/> Pendrive z pudełkiem na odbitki,<strong> Personalizowany album 20x20, 20 rozkładówek</strong></li>         
-          </ul>
-            `,
-        pricing: '',
-      },
-    ],
+    pricing: reportazSlubny.pricing,
   },
   {
     slug: 'sesja-slubna',
@@ -81,88 +46,22 @@ const oferts = [
     src: '//static/sesja-slubna.webp',
     seo_title: 'Oferta – Sesja Ślubna - Wytwórnia Wspomnień',
     seo_description: 'Sesja ślubna w plenerze, to idealna okazja na uwiecznienie Was w wyjątkowej roli Państwa Młodych. Fotografia Trójmiasto, Gdańsk i okolice.',
-    pricing: [
-      {
-        label: 'Standard',
-        price: 700,
-        content: `
-            <ul>
-                <li><strong>Zdjęcia</strong> <br/> 30 </li>
-                <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier </li>
-                <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
-                <li><strong>Dodatki</strong> <br/> Teczka na odbitkii </li>         
-            </ul>
-            `,
-      },
-      {
-        label: 'Premium',
-        price: 1200,
-        content: `
-          <ul>
-            <li><strong>Zdjęcia</strong> <br/> <strong>50</strong> </li>
-            <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier </li>
-            <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
-            <li><strong>Dodatki</strong> <br/> Teczka na odbitki, 
-            <strong>Personalizowany album 20x20, 10 rozkładówek</strong></li>         
-          </ul>
-            `,
-      },
-    ],
+    pricing: sesjaSlubna.pricing,
   },
   {
     slug: 'sesja-narzeczenska',
     name: 'Sesja narzeczeńska',
     lead: `
-    Sakrament Chrztu Świętego to piękny moment w życiu rodziny. 
-    Uwiecznienie tych wyjątkowych chwil na fotografiach będzie wspaniałą pamiątką 
-    dla Waszego dziecka. 
-    W tym szczególnym dniu będę za Wami podążać, 
-    łapiąc w kadrze Wasze emocje oraz czułe spojrzenia. 
-    Reportaż obejmuje ceremonię w kościele wraz ze zdjęciami rodzinnymi po mszy świętej. 
-    Możemy także poszerzyć ofertę o przygotowania przed uroczystością wraz z reportażem przyjęcia. 
-    Zdjęcia wykonuję na terenie Trójmiasta – Gdańsk, Sopot, Gdynia oraz w okolicach.
+    Sesja narzeczeńska w plenerze to piękna okazja na spędzenie wyjątkowych chwil przed
+    obiektywem. Chciałbym Was uwiecznić nad morzem, na łące, w parku bądź w lesie. Sesja
+    par to gwarancja pięknych, czułych ujęć. To czas w którym macie być skupieni wyłącznie na
+    sobie. Przed sesją wyślę Wam wszelkie informację jak się do niej przygotować. Zdjęcia
+    wykonuję na terenie Trójmiasta – Gdańsk, Sopot, Gdynia oraz w okolicach.
     `,
     src: '//static/sesja-narzeczenska.webp',
     seo_title: 'Oferta – Sesja narzeczeńska - Wytwórnia Wspomnień',
     seo_description: 'Sesja narzeczeńska w plenerze, to wspaniała okazja na spędzenie wyjątkowych chwil przed obiektywem. Fotografia Trójmiasto, Gdańsk i okolice.',
-    pricing: [
-      {
-        label: 'Mini',
-        price: 450,
-        content: `
-            <ul>
-                <li><strong>Zdjęcia</strong> <br/> 15</li>
-                <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
-                <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-                <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
-            </ul>
-            `,
-      },
-      {
-        label: 'Standard',
-        price: 600,
-        content: `
-            <ul>
-                <li><strong>Zdjęcia</strong> <br/> 25</li>
-                <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
-                <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-                <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
-            </ul>
-            `,
-      },
-      {
-        label: 'Premium',
-        price: 1100,
-        content: `
-        <ul>
-        <li><strong>Zdjęcia</strong> <br/> <strong>40</strong></li>
-        <li><strong>Odbitki</strong> <br/> 15x23 <br/> jedwabny paier</li>
-        <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-        <li><strong>Dodatki</strong> <br/> Teczka na odbitki,<strong> presoanlizowany album 20x20, 10 rozkładówek</strong></li>
-    </ul>
-            `,
-      },
-    ],
+    pricing: sesjaNarzeczenska.pricing,
   },
 ];
 
@@ -175,7 +74,7 @@ export default function OfferA({ ofert }) {
       <section className={styles.aboutSection}>
         <Decor />
         <div className={`flex ${styles.content}`}>
-          <div className={`flex relative w-full h-60 md:h-96 ${styles.image}`}>
+          <div className={`flex relative w-full ${styles.imageAbout}`}>
             <Image
               src={ofert.src}
               alt="Picture of the author"

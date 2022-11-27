@@ -11,7 +11,7 @@ export default function OffertCarts({ offerts }) {
         <a href={url}>
           <div className="my-4 md:my-0">
             
-            <div className="w-full h-64 md:h-96 relative">
+            <div className="w-full h-96 relative">
               <Image
                 src={src}
                 alt="Picture of the author"

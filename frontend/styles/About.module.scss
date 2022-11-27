@@ -12,12 +12,6 @@
         items-center ;
     }
 
-    @media (min-width: 768px) { 
-        .image {
-            height: 40rem;
-        }
-     }
-
         h1 {
             @apply font-bold text-3xl md:text-5xl text-center;			
             font-family: 'PT Serif';
@@ -51,10 +45,10 @@
         @apply 
         max-w-screen-xl 
         mx-auto 
-        flex-col 
-        md:flex-row 
         items-center ;
-        
+        // flex-col 
+        // md:flex-row 
+
         h2 {
             @apply font-bold text-2xl md:text-4xl;			
             font-family: 'PT Serif';
@@ -75,4 +69,13 @@
     }
 
 }
+
+.imageAbout {
+    height: 28rem;
+}
+@media (min-width: 768px) { 
+    .imageAbout {
+        height: 40rem;
+    }
+ }
 
