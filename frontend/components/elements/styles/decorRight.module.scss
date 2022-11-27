@@ -1,4 +1,8 @@
 .decorRight {
+<<<<<<< Updated upstream
     @apply absolute bottom-0 right-0 sm:hidden md:block;
+=======
+    @apply absolute bottom-0 right-0 sm:hidden md:hidden lg:hidden 2xl:block;
+>>>>>>> Stashed changes
     // z-index: -1;
 }
