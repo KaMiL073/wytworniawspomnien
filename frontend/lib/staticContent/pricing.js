@@ -1,4 +1,5 @@
 export default function getPricing(slug) {
+  // sesja-rodzinna, sesja-ciazowa, sesja-narzeczenska
   const pricing = [
     {
       label: 'Mini',
@@ -6,8 +7,8 @@ export default function getPricing(slug) {
       content: `
               <ul>
                   <li><strong>Zdjęcia</strong> <br/> 20</li>
-                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
                   <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
+                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
                   <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
               </ul>
               `,
@@ -18,8 +19,8 @@ export default function getPricing(slug) {
       content: `
               <ul>
                   <li><strong>Zdjęcia</strong> <br/> 30</li>
-                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
                   <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
+                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
                   <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
               </ul>
               `,
@@ -30,24 +31,40 @@ export default function getPricing(slug) {
       content: `
           <ul>
           <li><strong>Zdjęcia</strong> <br/> 50</li>
-          <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
           <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-          <li><strong>Dodatki</strong> <br/> Teczka na odbitki, Personalizowany album 20x20, 10 rozkładówek</li>
+          <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
+          <li><strong>Dodatki</strong> <br/> 
+            Teczka na odbitki, <br/> 
+            <strong>Personalizowany album 20x20, 10 rozkładówek</strong>
+          </li>
       </ul>
               `,
     },
   ];
-
+  // reportaz-z-chrztu-swietego
   const pricing2 = [
     {
       label: 'Standard',
       price: 700,
       content: `
             <ul>
-                <li><strong>Zdjęcia</strong> <br/> 30 </li>
-                <li><strong>Odbitki</strong> <br/>15x23 <br/> Jedwabny papier </li>
-                <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
-                <li><strong>Dodatki</strong> <br/> Teczka na odbitki </li>         
+                <li><strong>Zawiera</strong> <br/>
+                  ● Ceremonia z chrztu świętego <br/>
+                  ● Mini sesja rodzinna pod kościołem
+                </li>
+                <li><strong>Zdjęcia</strong> <br/>
+                  30 
+                </li>
+                <li><strong>Dodatkowe zdjęcie</strong> <br/>
+                  30 zł
+                </li>
+                <li><strong>Odbitki</strong> <br/>
+                  15x23 <br/> 
+                  Jedwabny papier 
+                </li>
+                <li><strong>Dodatki</strong> <br/> 
+                  Teczka na odbitki 
+                </li>         
             </ul>
             `,
     },
@@ -56,24 +73,47 @@ export default function getPricing(slug) {
       price: 1200,
       content: `
         <ul>
-            <li><strong>Zdjęcia</strong> <br/> 50 </li>
-            <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier </li>
-            <li><strong>Dodatkowe zdjęcia</strong> <br/> 30 zł </li>
-            <li><strong>Dodatki</strong> <br/> Teczka na odbitki, Personalizowany album 20x20, 10 rozkładówek</li>         
+            <li><strong>Zawiera</strong><br/>
+              ● <strong>Przygotowania do chrztu</strong><br/>
+              ● Ceremonia z chrztu świętego<br/>
+              ● Mini sesja rodzinna pod kościołem<br/>
+              ● <strong>Uroczystość</strong>
+            </li>
+            <li><strong>Zdjęcia</strong> <br/> 
+              <strong>50</strong>
+            </li>
+            <li><strong>Dodatkowe zdjęcie</strong> <br/>
+              30 zł
+            </li>
+            <li><strong>Odbitki</strong> <br/> 
+              15x23 <br/> 
+              Jedwabny papier
+            </li>
+            <li><strong>Dodatki</strong> <br/>
+              Teczka na odbitki <br/>
+              <strong>Personalizowany album 20x20, 10 rozkładówek</strong>
+            </li>         
         </ul>
             `,
     },
   ];
-
+  // reportaz-slubny
   const pricing3 = [
     {
       label: 'Standard',
       price: 3000,
       content: `
               <ul>
-                  <li><strong>Zawiera</strong> <br/> Przygotowania, ceremonia, wesele, mini sesja ślubna w dniu ślubu w okolicy Sali weselnej</li>
+                  <li><strong>Zawiera</strong> <br/> 
+                    ● Przygotowania ślubne <br/>
+                    ● Ceremonia ślubna <br/>
+                    ● Przyjęcie weselne <br/>
+                    ● Mini sesja w dniu ślubu w okolicy sali weselnej
+                  </li>
                   <li><strong>Zdjęcia</strong> <br/> 400 </li>
-                  <li><strong>Odbitki</strong> <br/>50 szt - 15x23 <br/> Jedwabny papier </li>
+                  <li><strong>Odbitki</strong> <br/>
+                    50 szt. - 15x23 <br/> 
+                    Jedwabny papier </li>
                   <li><strong>Dodatki</strong> <br/> Pendrive z pudełkiem na odbitki </li>         
               </ul>
               `,
@@ -83,53 +123,71 @@ export default function getPricing(slug) {
       price: 4000,
       content: `
             <ul>
-              <li><strong>Zawiera</strong> <br/> Przygotowania, ceremonia, wesele, mini sesja w dniu ślubu w okolicy Sali weselnej, pełna sesja ślubna w odrębnym dniu</li>
-              <li><strong>Zdjęcia</strong> <br/> 500 </li>
-              <li><strong>Odbitki</strong> <br/> 100 szt - 15x23 <br/> Jedwabny papier </li>
-              <li><strong>Dodatki</strong> <br/> Pendrive z pudełkiem na odbitki, Personalizowany album 20x20, 20 rozkładówek</li>         
+              <li><strong>Zawiera</strong> <br/> 
+                ● Przygotowania ślubne <br/> 
+                ● Ceremonia ślubna <br/> 
+                ● Przyjęcie weselne <br/> 
+                ● Mini sesja w dniu ślubu w okolicy sali weselnej <br/> 
+                ● <strong>Pełna sesja ślubna w odrębnym dniu</strong>
+              </li>
+              <li><strong>Zdjęcia</strong> <br/> 
+                <strong>500</strong> 
+              </li>
+              <li><strong>Odbitki</strong> <br/> 
+                <strong>100 szt. - 15x23 <br/> 
+                Jedwabny papier </strong>
+              </li>
+              <li><strong>Dodatki</strong> <br/> 
+                Pendrive z pudełkiem na odbitki
+                <strong>Personalizowany album 20x20, 20 rozkładówek</strong>
+              </li>         
             </ul>
               `,
     },
   ];
-
+  // sesja-slubna
   const pricing5 = [
     {
-      label: 'Mini',
-      price: 450,
-      content: `
-              <ul>
-                  <li><strong>Zdjęcia</strong> <br/> 15</li>
-                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
-                  <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-                  <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
-              </ul>
-              `,
-    },
-    {
       label: 'Standard',
-      price: 600,
+      price: 700,
       content: `
               <ul>
-                  <li><strong>Zdjęcia</strong> <br/> 25</li>
-                  <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
-                  <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-                  <li><strong>Dodatki</strong> <br/> Teczka na odbitki</li>
+                  <li><strong>Zdjęcia</strong> <br/> 30 </li>
+                  <li><strong>Dodatkowe zdjęcie</strong><br/>
+                    30 zł
+                  </li>
+                  <li><strong>Odbitki</strong> <br/>
+                    15x23 <br/> 
+                    Jedwabny papier </li>
+                  <li><strong>Dodatki</strong> <br/> 
+                    Teczka na odbitki 
+                  </li>         
               </ul>
               `,
     },
     {
       label: 'Premium',
-      price: 1100,
+      price: 1200,
       content: `
-          <ul>
-          <li><strong>Zdjęcia</strong> <br/> <strong>40</strong></li>
-          <li><strong>Odbitki</strong> <br/> 15x23 <br/> Jedwabny papier</li>
-          <li><strong>Dodatkowe zdjęcie</strong> <br/> 30 zł </li>
-          <li><strong>Dodatki</strong> <br/> Teczka na odbitki,<strong> Personalizowany album 20x20, 10 rozkładówek</strong></li>
+      <ul>
+        <li><strong>Zdjęcia</strong> <br/> 
+          <strong>50</strong> 
+        </li>
+        <li><strong>Dodatkowe zdjęcie</strong><br/>
+          30 zł
+        </li>
+        <li><strong>Odbitki</strong> <br/>
+          15x23 <br/> 
+          Jedwabny papier </li>
+        <li><strong>Dodatki</strong> <br/> 
+          Teczka na odbitki <br/> 
+          <strong>Personalizowany album 20x20, 10 rozkładówek</strong>
+        </li>         
       </ul>
               `,
     },
   ];
+
 
   const content = {
     'sesja-rodzinna': {
@@ -193,7 +251,7 @@ export default function getPricing(slug) {
                 Decyzję pozostawiam już Wam :)`,
       url: '/',
       img: '//static/sesja-slubna.webp',
-      pricing: pricing2,
+      pricing: pricing5,
     },
     'sesja-narzeczenska': {
       name: 'Cennik plenerowych sesji narzeczeńskich',
@@ -208,7 +266,7 @@ export default function getPricing(slug) {
 `,
       url: '/',
       img: '//static/sesja-narzeczenska.webp',
-      pricing: pricing5,
+      pricing: pricing,
     },
 
   };
