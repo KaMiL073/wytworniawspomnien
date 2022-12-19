@@ -7,6 +7,7 @@
 
 FROM node:16-alpine AS builder
 
+RUN mkdir -p /directus && chown -R node:node /directus
 RUN apk --no-cache add git
 USER node
 WORKDIR /directus

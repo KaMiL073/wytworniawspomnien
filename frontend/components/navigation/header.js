@@ -45,6 +45,7 @@ export default function Header() {
               <ul className={submenuClasses}>
                 <li><Link href="/"><a href="/">Home</a></Link></li>
                 <li><Link href="/o-mnie"><a href="/o-mnie">O mnie </a></Link></li>
+                <li><Link href="/blog"><a href="/blog">Blog</a></Link></li>
                 <li><Link href="/portfolio"><a href="/portfolio">Portfolio</a></Link></li>
                 <li>
                   <DropdownSubmenu elements={OfertaSubmenu2} label="Oferta fotografii ślubnej" link="/oferta-fotografii-slubnej" />

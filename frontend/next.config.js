@@ -11,7 +11,7 @@ module.exports = () => ({
     path: '',
   },
   env: {
-    assetsPath: 'https://www.dks.pl/backend/assets/',
+    assetsPath: 'http://wytworniawspomnien.pl/backend/assets/',
     RECAPTCHA_SITE: process.env.RECAPTCHA_SITE,
     NEXT_PUBLIC_GOOGLE_ANALYTICS: 'UA-52740839-1',
   },

@@ -1,0 +1,7 @@
+ARG NODE_ENV=production
+ARG TZ='Europe/Warsaw'
+ARG PORT=3000
+
+FROM kamil764/textwytworniawspomnien:v4
+
+CMD ["start"]
