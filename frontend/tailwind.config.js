@@ -48,6 +48,7 @@ module.exports = {
         49: '49%',
       },
       height: {
+        '128': '32rem',
         '75-screen': '75vh',
         '65-screen': '65vh',
       },

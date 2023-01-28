@@ -36,4 +36,5 @@ ENV NODE_ENV=$NODE_ENV \
 EXPOSE 8055
 RUN ["chmod", "+x", "./dev/start_dev.sh"]
 RUN ["chmod", "+x", "./dev/start.sh"]
+RUN ["chmod", "a+rwx", "./uploads"]
 ENTRYPOINT ["./dev/start.sh"]

@@ -12,7 +12,7 @@ services:
       args:
         NODE_ENV: 'production'
         NEXT_PUBLIC_URL: 'http://localhost/'
-        BACKEND_URL: 'http://217.182.78.34/backend/'
+        BACKEND_URL: 'https://217.182.78.34/backend/'
         SERVICE_USER_TOKEN: 'kCZkQ7LBNO5LOBbqCts3Kiwpcw_ek5_k'
     command: [ 'start' ]
     environment:
@@ -26,12 +26,16 @@ services:
     build: 
       context: ./proxy
       args:
-        PROXY_CONF_FILE: './proxy_dev.conf'
+        PROXY_CONF_FILE: './proxy_production.conf'
     ports:
       - 80:80
       - 443:443
-    # volumes:
-      # - ./proxy/certs:/etc/nginx/certs
+    volumes:
+      - ./proxy/certs:/etc/nginx/certs
+    # depends_on:
+    #   - directus
+    #   - frontend
+
 volumes:
   directus_uploads:
   node_modules:
