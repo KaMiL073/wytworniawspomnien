@@ -2,37 +2,36 @@ services:
   cache:
     container_name: cache
     image: redis:6.0-alpine
-
+   
   frontend:
     container_name: frontend
-#     depends_on:
-#       - proxy
     build:
       context: ./frontend
       args:
-        NODE_ENV: 'production'
+        NODE_ENV: 'development'
+        # NODE_ENV: 'production'
+        #NODE_ENV: 'production-archive'
         NEXT_PUBLIC_URL: 'http://localhost/'
-        BACKEND_URL: 'https://www.wytworniawspomnien.pl/backend/'
+        BACKEND_URL: 'http://217.182.78.34/backend/'
         SERVICE_USER_TOKEN: 'kCZkQ7LBNO5LOBbqCts3Kiwpcw_ek5_k'
-    command: [ 'start' ]
+    command: [ 'dev' ]
     environment:
       SERVICE_USER_TOKEN: 'kCZkQ7LBNO5LOBbqCts3Kiwpcw_ek5_k'
     volumes:
       - ./frontend:/usr/src/app
       - node_modules:/usr/src/app/node_modules
-
   proxy:
     container_name: proxy
-    build: 
+    build:
       context: ./proxy
       args:
-        # PROXY_CONF_FILE: './proxy_production.conf'
         PROXY_CONF_FILE: './proxy_dev.conf'
     ports:
       - 80:80
-      # - 443:443
-    # volumes:
-      # - ./proxy/certs:/etc/nginx/certs
+      - 443:443
+    volumes:
+      - ./proxy/certs:/etc/nginx/certs
+
 volumes:
   directus_uploads:
   node_modules:

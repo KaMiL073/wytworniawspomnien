@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="w-4/12 flex items-center">
         <Link href="/">
           <a className={styles.logo} href="/">
-            <Image src="/static/logo.svg" alt="Wytwórnia Wspomnień" layout="fill" objectFit="contain" />
+            <Image src="//static/logo.svg" alt="Wytwórnia Wspomnień" layout="fill" objectFit="contain" />
           </a>
         </Link>
       </div>

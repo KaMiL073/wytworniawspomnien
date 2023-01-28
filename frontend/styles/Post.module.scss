@@ -1,0 +1,39 @@
+.posts {
+    @apply w-full md:max-h-screen relative py-20;
+    background: #CD8E79;
+    .content {
+        @apply max-w-screen-xl justify-between mx-auto pt-8 md:pt-0;        
+    }
+    h1 {
+        @apply font-bold text-3xl md:text-5xl text-center;			
+        font-family: 'PT Serif';
+        color: #EDD6CF;
+    }
+    p {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 143.3%;
+        /* or 23px */
+
+        text-align: center;
+
+        color: #E5E2E1;
+    }
+}
+.image{
+    height: 15rem;;
+}
+
+@media (min-width: 768px) { 
+    .image {
+        height: 27rem;
+    }
+}
+
+.btn {
+    @apply text-black text-center block rounded-xl md:w-1/2 py-3 px-6 mx-auto mt-8;
+    background: #EDD6CF;
+}
+

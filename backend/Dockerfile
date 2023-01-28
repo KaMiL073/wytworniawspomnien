@@ -7,6 +7,7 @@
 
 FROM node:16-alpine AS builder
 
+RUN mkdir -p /directus && chown -R node:node /directus
 RUN apk --no-cache add git
 USER node
 WORKDIR /directus
@@ -35,4 +36,5 @@ ENV NODE_ENV=$NODE_ENV \
 EXPOSE 8055
 RUN ["chmod", "+x", "./dev/start_dev.sh"]
 RUN ["chmod", "+x", "./dev/start.sh"]
+RUN ["chmod", "a+rwx", "./uploads"]
 ENTRYPOINT ["./dev/start.sh"]
